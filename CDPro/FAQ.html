@@ -1,0 +1,134 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Sreerama">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (WinNT; U) [Netscape]">
+  <title>CDPro - Software for Analyzing Protein CD Spectra</title>
+</head>
+<body>
+<font face="Times New Roman,Times"><font color="#000099">CD Analysis
+Using <b>CDPro</b> <i>via</i> the Internet Browser</font></font> <br>
+<hr noshade="noshade" width="100%"> <br>
+<b><font color="#000099">Frequently Asked Questions</font></b> <br>
+&nbsp;
+<center>
+<table border="1" cellspacing="0" cellpadding="5" cols="1" width="100%"
+ bgcolor="#ffffcc">
+  <tbody>
+    <tr align="center">
+      <td align="left" valign="CENTER"><b><font color="#cc0000"><font
+ size="-1">Q: What is CDPro?</font></font></b> <br>
+      <font size="-1">A: <b>CDPro</b> is a suite of programs for
+protein CD analysis. It contains three popular CD analysis programs [<b>CONTIN,
+CDSSTR, and SELCON3</b>], a program to generate <b>INPUT</b> file that
+is used by all three programs, and a program [<b>CLUSTER</b>] for
+determining the tertiary structure class from CD spectrum. The CD
+analysis programs use multiple sets of reference proteins [CD and
+secondary structure data] and these are also provided in this site. <b>Download
+the CDPro.zip file and unzip it from your C: drive</b>. CDPro directory
+will be created with all necessary files. <b>Open the <u><font
+ color="#3333ff">RunCDPro.html</font></u> file from a internet browser</b>.
+(Netscape 4.7 or IE6.0).</font>
+      <p><b><font color="#cc0000"><font size="-1">Q: How do I use CDPro?</font></font></b> <br>
+      <font size="-1">A: CDPro can be used either in a PC or on any
+computer. The executables and the browser-based linker for analysis are
+provided at this site; <u>download CDPro.zip</u>. The programs need to
+be compiled for any other computer. The INPUT file need to be generated
+before executing the CDPro programs.</font> </p>
+      <p><b><font color="#cc0000"><font size="-1">Q: What spectral
+range should be used for a good analysis?</font></font></b> <br>
+      <font size="-1">A: Normally, one should use CD spectra <b>at
+least in the range 190-240 nm</b>. But sometimes experimental
+conditions limit the range to 200 nm or so, and the flexibility of the
+refernce sets in the more recent programs allows the use of 200-240 nm
+in CD analyses. The reliability, however, is slightly reduced as one
+reduces the wavelength range. Comparison of performances of the two
+spectral ranges are available in Sreerama et al. Anal. Biochem. (2000)</font> </p>
+      <p><b><font color="#cc0000"><font size="-1">Q: What are units of
+CD data used in the analysis?</font></font></b> <br>
+      <font size="-1">A: The CD spectra should be in <b><font
+ color="#3333ff">per residue molar absorbance units (<font face="Symbol">De&nbsp;</font>M<sup>-1</sup>
+cm<sup>-1</sup>)</font></b>. Most CD instruments have the software to
+convert raw CD data to either molar ellipticity or molar absorbance
+units. Be sure to divide the CD data by the number of residues in the
+protein. The CD data in <u>either molar ellipticity or molar
+absorbance units </u>can be used in the <b><font color="#3333ff">CRDATA</font></b>
+program to generate the INPUT file.</font> </p>
+      <p><b><font color="#cc0000"><font size="-1">Q: How do I generate
+the Input file?</font></font></b> <br>
+      <font size="-1">A: The analysis programs are written is FORTRAN
+and they require CD data in a certain format. The file "<b>INPUT</b>"
+need to be created containing the CD data, wavelength range, etc. It
+can be done using a program called "<b>CRDATA</b>" which converts CD
+data from any CD instrument in a text file to the required format. You
+will have to refer to the manual or check the software that came with
+your CD instrument. The text file should contain only wavelength and CD
+value in each line. Check the examples provided.</font> </p>
+      <p><b><font color="#cc0000"><font size="-1">Q: How do I choose a
+reference set?</font></font></b> <br>
+      <font size="-1">A: <b>The reference set with the largest number
+of proteins should be chosen</b>. This often depends on your CD data.
+If your CD data is only down to 190 nm or so (say, 190-250 nm) then you
+can select the reference set with 43 proteins (Basis_1 =&nbsp; 4). But
+if you have CD data down to 180 nm (180-250 nm) then it would be wise
+to use the reference set with 29 proteins, which has CD data in the
+range 178-260 nm. Our studies have suggested that the limitaions
+introduced in the analysis by the lack of short-wavelength data (180 to
+190 nm) is partially overcome by the use of a larger reference set.</font> </p>
+      <p><b><font color="#cc0000"><font size="-1">Q: Which values can I
+change, and How do I change them, in the INPUT file?&nbsp;</font></font></b> <br>
+      <font size="-1">A: The only values that may be changed in a
+properly generated INPUT file are <font color="#3333ff">IPRINT (from 0
+to 1)</font> and <font color="#3333ff">Basis_1 (any value between 1-10)</font>.<b>Changing
+IPRINT to 1 would generate the output for every iteration and this
+should be done if a problem is suspected in the analysis; otherwise the
+standard output is sufficient to examine the results</b>. Basis_1 value
+determines the reference set to be used in the analysis. <u>Normally,
+the largest reference set available for the wavelength range should be
+used</u>. Value of 8 selects a reference set based on the tertiary
+class determined by the <font color="#3333ff">CLUSTER</font> program
+which should be run prior to its selection. Values 6 and 7 select
+reference sets with<u> denatured CD spectra</u>, and should be used for
+studying CD spectra under denaturing conditions. Consult the Readme and
+other help files provided. The changes in the INPUT file can be made
+using a text editor; <b>Edit_Input</b> button at the top of the screen
+can be used to open the DOS editor on your PC.</font> </p>
+      <p><b><font color="#cc0000"><font size="-1">Q: How do I read the
+results?</font></font></b> <br>
+      <font size="-1">A: Each program (CDSSTR, CONTINLL, and SELCON3)
+has a separate output (program_name.OUT) which contains results at
+various stages. Summary of the run (title, reference set, program and
+secondary structure) is added to ProtSS.OUT (execution of each of these
+programs write to this file). The calculated CD spectrum (corresponding
+to the result) is also output -- see next Q.</font> </p>
+      <p><b><font color="#cc0000"><font size="-1">Q: Can I compare the
+Calculated CD spectra with Experiment?</font></font></b> <br>
+      <font size="-1">A: <b>Yes</b>. The calculated CD spectrum (from
+each program) is compared with the experimental spectrum in files:
+CalcCD.OUT, reconCD.OUT and CONTIN.CD. They can be imported into a
+plotting software, such as Axum or SigmaPlot . <u>The programs also
+calculate the RMSD between the two and print the result in
+program_name.out and ProtSS.out files.<br>
+      </u></font></p>
+      <b><font color="#cc0000"><font size="-1">Q: What are RMSD and
+NRMSD?</font></font></b> <br>
+      <font size="-1">A: These are the RMS and normalized RMS
+differences between the calculated and experimental CD spectra. They
+can be different from different reference sets and different programs.
+For a given INPUT file (given CD data and a chosen reference set) both
+RMSD and NRMSD decrease in the order:&nbsp; <span
+ style="font-weight: bold;">SELCON3 &gt; CDSSTR &gt; CONTINLL</span>.
+This difference has to do with the algorithm and these values <span
+ style="font-weight: bold; color: rgb(255, 0, 0);">should not be used
+to judge the quality of the analysis</span>.</font></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<br>
+&nbsp;
+</body>
+</html>

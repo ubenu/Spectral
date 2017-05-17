@@ -1,0 +1,389 @@
+********************************************************************************
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 49
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .19   .17   .27   .06   .14   .16
+[2] Ave of  9 Solns with Deg Freed:  7-16   .26   .17   .14   .06   .15   .22
+[3] Solution with Min. Error;    Isol= 10   .32   .16   .10   .05   .15   .22
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 48
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .19   .16   .25   .06   .15   .19
+[2] Ave of  9 Solns with Deg Freed:  7-16   .26   .16   .12   .06   .16   .23
+[3] Solution with Min. Error;    Isol= 10   .32   .16   .09   .05   .15   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 47
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .19   .16   .26   .06   .14   .19
+[2] Ave of  9 Solns with Deg Freed:  7-16   .27   .16   .13   .06   .15   .23
+[3] Solution with Min. Error;    Isol= 10   .32   .16   .09   .05   .15   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 46
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .19   .15   .25   .06   .16   .18
+[2] Ave of  9 Solns with Deg Freed:  7-16   .27   .16   .12   .06   .16   .23
+[3] Solution with Min. Error;    Isol= 10   .32   .16   .09   .05   .15   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 45
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .19   .16   .25   .06   .16   .18
+[2] Ave of  9 Solns with Deg Freed:  7-16   .27   .16   .13   .06   .16   .23
+[3] Solution with Min. Error;    Isol= 10   .32   .16   .09   .05   .15   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 44
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .20   .17   .21   .06   .14   .21
+[2] Ave of  9 Solns with Deg Freed:  7-16   .26   .16   .13   .06   .16   .23
+[3] Solution with Min. Error;    Isol= 10   .32   .15   .10   .05   .15   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 43
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .21   .17   .21   .07   .14   .21
+[2] Ave of  8 Solns with Deg Freed:  7-16   .26   .16   .13   .06   .16   .23
+[3] Solution with Min. Error;    Isol=  9   .31   .15   .10   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 42
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .21   .18   .21   .07   .14   .19
+[2] Ave of  8 Solns with Deg Freed:  7-16   .26   .16   .13   .06   .16   .23
+[3] Solution with Min. Error;    Isol=  9   .31   .15   .10   .05   .15   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 41
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .21   .18   .21   .07   .14   .20
+[2] Ave of  8 Solns with Deg Freed:  7-16   .26   .16   .13   .06   .16   .23
+[3] Solution with Min. Error;    Isol=  9   .31   .15   .10   .05   .15   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 40
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .21   .18   .21   .07   .14   .20
+[2] Ave of  8 Solns with Deg Freed:  7-16   .26   .16   .13   .06   .16   .23
+[3] Solution with Min. Error;    Isol=  9   .31   .15   .11   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 39
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .21   .16   .17   .07   .17   .21
+[2] Ave of  8 Solns with Deg Freed:  7-16   .26   .15   .13   .07   .18   .22
+[3] Solution with Min. Error;    Isol=  9   .32   .14   .11   .05   .16   .22
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 38
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .21   .17   .17   .08   .17   .20
+[2] Ave of  8 Solns with Deg Freed:  7-16   .26   .15   .13   .07   .17   .21
+[3] Solution with Min. Error;    Isol=  9   .32   .14   .11   .05   .16   .22
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 37
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .21   .17   .17   .08   .17   .20
+[2] Ave of  8 Solns with Deg Freed:  7-16   .26   .16   .13   .07   .17   .21
+[3] Solution with Min. Error;    Isol=  9   .32   .14   .10   .05   .16   .22
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 36
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .22   .17   .17   .07   .17   .21
+[2] Ave of  5 Solns with Deg Freed:  7-16   .31   .15   .10   .06   .17   .22
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .09   .05   .16   .22
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 35
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .24   .20   .13   .06   .17   .20
+[2] Ave of  5 Solns with Deg Freed:  7-16   .31   .15   .07   .05   .18   .23
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .08   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 34
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .23   .19   .09   .05   .20   .23
+[2] Ave of  5 Solns with Deg Freed:  7-16   .31   .15   .06   .05   .19   .24
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .08   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 33
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .23   .20   .09   .05   .20   .23
+[2] Ave of  5 Solns with Deg Freed:  7-16   .31   .15   .06   .05   .19   .24
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .08   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 32
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .23   .20   .08   .05   .21   .23
+[2] Ave of  5 Solns with Deg Freed:  7-16   .31   .15   .06   .05   .19   .24
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .08   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 31
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .22   .19   .09   .05   .21   .24
+[2] Ave of  5 Solns with Deg Freed:  7-16   .30   .15   .07   .05   .19   .25
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .08   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 30
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .23   .18   .05   .05   .23   .26
+[2] Ave of  5 Solns with Deg Freed:  7-16   .30   .15   .06   .05   .19   .25
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .08   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 29
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .23   .18   .00   .05   .25   .28
+[2] Ave of  6 Solns with Deg Freed:  7-16   .30   .15   .03   .05   .21   .27
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .06   .05   .17   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 28
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .26   .17   .00   .06   .24   .27
+[2] Ave of  6 Solns with Deg Freed:  7-16   .30   .15   .03   .05   .20   .26
+[3] Solution with Min. Error;    Isol= 10   .33   .15   .06   .05   .17   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 27
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .28   .22   .00   .02   .20   .28
+[2] Ave of  6 Solns with Deg Freed:  7-16   .30   .16   .04   .05   .20   .26
+[3] Solution with Min. Error;    Isol=  9   .32   .15   .05   .05   .18   .25
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 26
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .26   .20   .00   .03   .22   .29
+[2] Ave of  6 Solns with Deg Freed:  7-16   .30   .16   .04   .05   .20   .26
+[3] Solution with Min. Error;    Isol= 10   .34   .15   .05   .05   .17   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 25
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .23   .19   .00   .04   .24   .31
+[2] Ave of  6 Solns with Deg Freed:  7-16   .30   .16   .04   .05   .20   .26
+[3] Solution with Min. Error;    Isol=  9   .34   .15   .05   .05   .17   .25
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 24
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .25   .19   .00   .04   .24   .28
+[2] Ave of  6 Solns with Deg Freed:  7-16   .30   .16   .04   .05   .19   .26
+[3] Solution with Min. Error;    Isol=  9   .33   .15   .05   .05   .17   .25
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 23
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .29   .19   .00   .04   .23   .25
+[2] Ave of  6 Solns with Deg Freed:  7-16   .31   .16   .04   .05   .19   .26
+[3] Solution with Min. Error;    Isol=  9   .33   .15   .05   .05   .17   .25
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 22
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .28   .20   .03   .05   .20   .25
+[2] Ave of  3 Solns with Deg Freed:  7-16   .34   .16   .05   .04   .16   .25
+[3] Solution with Min. Error;    Isol= 11   .35   .17   .05   .04   .16   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 21
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .28   .22   .00   .02   .20   .29
+[2] Ave of  3 Solns with Deg Freed:  7-16   .34   .16   .05   .04   .16   .25
+[3] Solution with Min. Error;    Isol= 11   .35   .16   .05   .04   .16   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 20
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .19   .15   .02   .06   .26   .32
+[2] Ave of  3 Solns with Deg Freed:  7-16   .33   .16   .05   .05   .17   .25
+[3] Solution with Min. Error;    Isol= 11   .34   .16   .04   .04   .16   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 19
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .19   .14   .03   .07   .25   .32
+[2] Ave of  3 Solns with Deg Freed:  7-16   .33   .16   .04   .04   .17   .25
+[3] Solution with Min. Error;    Isol= 11   .34   .17   .04   .04   .16   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 18
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .14   .15   .02   .07   .26   .36
+[2] Ave of  3 Solns with Deg Freed:  7-16   .33   .16   .04   .04   .17   .25
+[3] Solution with Min. Error;    Isol= 11   .35   .17   .04   .04   .16   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 17
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .18   .14   .04   .07   .26   .32
+[2] Ave of  3 Solns with Deg Freed:  7-16   .32   .16   .05   .05   .17   .25
+[3] Solution with Min. Error;    Isol= 11   .33   .16   .04   .05   .17   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 16
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .17   .13   .04   .08   .26   .32
+[2] Ave of  3 Solns with Deg Freed:  7-16   .32   .15   .05   .05   .18   .25
+[3] Solution with Min. Error;    Isol= 11   .33   .16   .05   .05   .17   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 15
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .17   .14   .03   .08   .28   .31
+[2] Ave of  3 Solns with Deg Freed:  7-16   .32   .16   .04   .05   .18   .24
+[3] Solution with Min. Error;    Isol= 11   .33   .16   .05   .05   .17   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 14
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .27   .13   .04   .06   .23   .26
+[2] Ave of  3 Solns with Deg Freed:  7-16   .32   .16   .04   .05   .18   .24
+[3] Solution with Min. Error;    Isol= 11   .33   .16   .04   .05   .18   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 13
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .28   .14   .05   .05   .21   .27
+[2] Ave of  4 Solns with Deg Freed:  7-16   .32   .16   .05   .05   .18   .25
+[3] Solution with Min. Error;    Isol= 11   .33   .16   .05   .05   .18   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 12
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .29   .14   .05   .05   .21   .26
+[2] Ave of  3 Solns with Deg Freed:  7-16   .32   .16   .05   .05   .18   .24
+[3] Solution with Min. Error;    Isol= 11   .32   .16   .04   .05   .18   .24
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 11
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .31   .15   .05   .05   .19   .25
+[2] Ave of  3 Solns with Deg Freed:  7-16   .32   .16   .05   .05   .18   .24
+[3] Solution with Min. Error;    Isol= 11   .32   .16   .04   .05   .18   .25
+--------------------------------------------------------------------------------
+
+    Number of Proteins: 10
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .37   .16   .06   .06   .15   .21
+[2] Ave of  3 Solns with Deg Freed:  7-16   .35   .17   .05   .05   .16   .23
+[3] Solution with Min. Error;    Isol= 11   .34   .17   .04   .05   .16   .23
+--------------------------------------------------------------------------------
+
+    Number of Proteins:  9
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .36   .16   .05   .05   .15   .23
+[2] Ave of  4 Solns with Deg Freed:  7-16   .35   .16   .05   .05   .16   .22
+[3] Solution with Min. Error;    Isol= 11   .35   .17   .05   .05   .16   .22
+--------------------------------------------------------------------------------
+
+    Number of Proteins:  8
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .35   .17   .05   .05   .15   .22
+[2] Ave of 10 Solns with Deg Freed:  7-16   .37   .16   .05   .04   .14   .23
+[3] Solution with Min. Error;    Isol= 11   .35   .17   .05   .05   .16   .22
+--------------------------------------------------------------------------------
+
+    Number of Proteins:  7
+
+
+
+[1] CONTIN-Chosen Solution;      ISol= 12   .36   .17   .05   .05   .15   .22
+[2] Ave of 11 Solns with Deg Freed:  7-16   .37   .16   .05   .05   .14   .23
+[3] Solution with Min. Error;    Isol= 11   .36   .17   .05   .05   .15   .22
+-------------

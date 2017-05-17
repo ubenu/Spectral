@@ -1,0 +1,189 @@
+________________________________________________________________________________
+
+ SAMPLE:       :  Triose Phosphate Isomerase (Test: 245-185 nm)                  
+ PROGRAM:      :   SELCON3
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .357    .169    .045    .041    .156    .224
+ RMSD(Exp-Calc):    .484
+ NRMSD(Exp-Cal):    .090
+________________________________________________________________________________
+
+ SAMPLE:       :  Lactate Dehydrogenase (Test: 250-190 nm)                       
+ PROGRAM:      :   SELCON3
+ Ref. Prot. Set:   SP43 
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .264    .176    .075    .057    .163    .268
+ RMSD(Exp-Calc):    .398
+ NRMSD(Exp-Cal):    .089
+________________________________________________________________________________
+
+ SAMPLE:       :  Flavodoxin (Test: 240-200 nm)                                  
+ PROGRAM:      :   SELCON3
+ Ref. Prot. Set:   SMP56
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .137    .115    .170    .092    .214    .280
+ RMSD(Exp-Calc):    .139
+ NRMSD(Exp-Cal):    .066
+________________________________________________________________________________
+
+ SAMPLE:       :  Triose Phosphate Isomerase (Test: 245-185 nm)              
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .337    .160    .052    .046    .166    .238
+ RMSD(Exp-Calc):    .101
+ NRMSD(Exp-Cal):    .019
+________________________________________________________________________________
+
+ SAMPLE:       :  Lactate Dehydrogenase (Test: 250-190 nm)                   
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SP43 
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .252    .156    .078    .066    .176    .273
+ RMSD(Exp-Calc):    .074
+ NRMSD(Exp-Cal):    .017
+________________________________________________________________________________
+
+ SAMPLE:       :  Flavodoxin (Test: 240-200 nm)                              
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SMP56
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .137    .120    .165    .090    .206    .281
+ RMSD(Exp-Calc):    .045
+ NRMSD(Exp-Cal):    .022
+________________________________________________________________________________
+
+ SAMPLE:       : Triose Phosphate Isomerase (Test: 245-185 nm)    
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .356    .175    .069    .045    .144    .210
+ RMSD(Exp-Calc):    .170
+ NRMSD(Exp-Cal):    .031
+________________________________________________________________________________
+
+ SAMPLE:       : Lactate Dehydrogenase (Test: 250-190 nm)         
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SP43 
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .286    .177    .075    .063    .154    .244
+ RMSD(Exp-Calc):    .173
+ NRMSD(Exp-Cal):    .039
+________________________________________________________________________________
+
+ SAMPLE:       : Flavodoxin (Test: 240-200 nm)                    
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SMP56
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .141    .105    .174    .092    .207    .280
+ RMSD(Exp-Calc):    .059
+ NRMSD(Exp-Cal):    .028
+________________________________________________________________________________
+
+ SAMPLE:       : Triose Phosphate Isomerase (Test: 245-185 nm)    
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .353    .171    .073    .046    .143    .213
+ RMSD(Exp-Calc):    .213
+ NRMSD(Exp-Cal):    .039
+________________________________________________________________________________
+
+ SAMPLE:       : Lactate Dehydrogenase (Test: 250-190 nm)         
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SP43 
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .288    .177    .069    .060    .160    .246
+ RMSD(Exp-Calc):    .129
+ NRMSD(Exp-Cal):    .029
+________________________________________________________________________________
+
+ SAMPLE:       : Flavodoxin (Test: 240-200 nm)                    
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SMP56
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .141    .105    .178    .093    .204    .276
+ RMSD(Exp-Calc):    .056
+ NRMSD(Exp-Cal):    .027
+________________________________________________________________________________
+
+ SAMPLE:       : Triose Phosphate Isomerase (Test: 245-185 nm)    
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .357    .172    .071    .047    .143    .210
+ RMSD(Exp-Calc):    .180
+ NRMSD(Exp-Cal):    .033
+________________________________________________________________________________
+
+ SAMPLE:       : Lactate Dehydrogenase (Test: 250-190 nm)         
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SP43 
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .295    .176    .070    .060    .156    .240
+ RMSD(Exp-Calc):    .128
+ NRMSD(Exp-Cal):    .029
+________________________________________________________________________________
+
+ SAMPLE:       : Flavodoxin (Test: 240-200 nm)                    
+ PROGRAM:      :   CDSSTR  
+ Ref. Prot. Set:   SMP56
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .138    .105    .182    .095    .205    .277
+ RMSD(Exp-Calc):    .057
+ NRMSD(Exp-Cal):    .027
+________________________________________________________________________________
+
+ SAMPLE:       :  Triose Phosphate Isomerase (Test: 245-185 nm)                  
+ PROGRAM:      :   SELCON3
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .357    .169    .045    .041    .156    .224
+ RMSD(Exp-Calc):    .484
+ NRMSD(Exp-Cal):    .090
+________________________________________________________________________________
+
+ SAMPLE:       :  Lactate Dehydrogenase (Test: 250-190 nm)                       
+ PROGRAM:      :   SELCON3
+ Ref. Prot. Set:   SP43 
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .264    .176    .075    .057    .163    .268
+ RMSD(Exp-Calc):    .398
+ NRMSD(Exp-Cal):    .089
+________________________________________________________________________________
+
+ SAMPLE:       :  Flavodoxin (Test: 240-200 nm)                                  
+ PROGRAM:      :   SELCON3
+ Ref. Prot. Set:   SMP56
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Trn     Unrd
+ Fractions     :    .137    .115    .170    .092    .214    .280
+ RMSD(Exp-Calc):    .139
+ NRMSD(Exp-Cal):    .066
+________________________________________________________________________________
+
+ SAMPLE:       :  Triose Phosphate Isomerase (Test: 245-185 nm)              
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .337    .160    .052    .046    .166    .238
+ RMSD(Exp-Calc):    .101
+ NRMSD(Exp-Cal):    .019
+________________________________________________________________________________
+
+ SAMPLE:       :  Lactate Dehydrogenase (Test: 250-190 nm)                   
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SP43 
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .252    .156    .078    .066    .176    .273
+ RMSD(Exp-Calc):    .074
+ NRMSD(Exp-Cal):    .017
+________________________________________________________________________________
+
+ SAMPLE:       :  Flavodoxin (Test: 240-200 nm)                              
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SMP56
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .137    .120    .165    .090    .206    .281
+ RMSD(Exp-Calc):    .045
+ NRMSD(Exp-Cal):    .022

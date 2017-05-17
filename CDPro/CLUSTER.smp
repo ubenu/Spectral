@@ -1,0 +1,66 @@
+
+________________________________________________________________________________
+
+  Determination of TERTIARY CLASS using the method of
+  Venyaminov and Vassilenko, Anal. Biochem. 222, 176 (1994)
+
+  Program Modified by Sreerama. N.(2000) for use with CDPro
+
+  The TERTIARY CLASSES are All-Alpha, All-beta, Alpha-Beta,     and Denatured
+
+  CD analysis could be performed for former three classes
+
+________________________________________________________________________________
+
+
+ Trial Run CRDATA.INP                                                           
+
+
+ The wavelength range:   250.0  188.0, is different from that of
+ Anal.Biochem.Paper:  236.0  190.0
+ The No. of CD points =   63
+
+ The wavelengths are modified to be within the valid range
+
+ Beginning wavelength:  190.00; Ending wavelength:  236.00
+ Total No of CD points  26
+
+
+   -.445   -.459   -.500   -.683  -1.046  -1.491  -1.852  -2.030  -2.048  -1.977
+  -1.865  -1.730  -1.601  -1.485  -1.352  -1.181   -.983   -.767   -.554   -.376
+   -.253   -.172   -.103   -.029   1.000
+
+
+  Weight*CD    Class          Class
+--------------------------------------------
+    51.245   Alfa+Beta +    All Alpha  - 
+    -9.091   Alfa/Beta -    All Alpha  + 
+   -78.634   Alfa/Beta -    Alfa+Beta  + 
+     7.703   All Beta  +    All Alpha  - 
+     3.046   All Beta  +    Alfa+Beta  - 
+     7.914   All Beta  +    Alfa/Beta  - 
+     1.934   Denatured +    All Alpha  - 
+    -1.577   Denatured -    Alfa+Beta  + 
+     2.079   Denatured +    Alfa/Beta  - 
+   -17.030   Denatured -    All Beta   + 
+
+      Class     Score
+--------------------------
+    All Alpha    1
+    Alfa+Beta    3
+    Alfa/Beta    0
+    All Beta     4
+    Denatured    2
+
+  Maximum Score Obtained:  4
+  PREDICTED Tertiary Class: All Beta 
+
+
+  Program has created CDDATA.CA and SSDATA.CA
+    containing reference proteins from this specific class
+  The INPUT file now has Bas1 = 8
+  You may RUN CD ANALYSIS PROGRAMS NOW
+
+
+________________________________________________________________________________
+

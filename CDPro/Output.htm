@@ -1,0 +1,999 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Sreerama">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (WinNT; U) [Netscape]">
+  <title>CDPro - Software for Analyzing Protein CD Spectra</title>
+</head>
+<body>
+&nbsp;
+<center>
+<p><a name="OUTPUT Summary for CDPro"></a><u><font color="#3333ff"><font
+ size="+1">OUTPUT Summary from CDPro:</font></font></u></p>
+</center>
+<ul>
+  <li> Once the <font color="#ff0000">INPUT</font> file is ready run the
+programs <font color="#ff0000">SELCON3, CDSSTR</font> and <font
+ color="#ff0000">CONTINLL</font> in any order. The output files are
+created and the final result from each program is written in <font
+ color="#ff0000">PROTSS.OUT</font>&nbsp; --- Individual program outputs
+(<font color="#ff0000"><a href="#SELCON3.OUT">SELCON3.OUT</a>, <a
+ href="#CDSSTR.OUT">CDSSTR.OUT</a> and <a href="#CONTINLL.OUT">CONTINLL.OUT</a></font>)
+can also be examined in case of problems. (The OUTPUTs now also contain
+the RMSD between the calculated and experimental spectra.)</li>
+</ul>
+<ul>
+  <li> Program <font color="#ff0000">CLUSTER</font> modifies the&nbsp; <font
+ color="#ff0000">INPUT</font> file for reading tertiary class specific
+reference protein set and creates the required files. The option <font
+ color="#ff0000">IBasis is 8 </font>for this reference set. (OUTPUT: <a
+ href="#CLUSTER.OUT">CLUSTER.OUT</a>)</li>
+  <li>A New parameter NRMSD is printed. This gives the Normalized RMS
+deviation between the calculated and experimental spectra. (Also called:
+Goodness of the FIT.) <br>
+  </li>
+  <li>Care must be taken while using the RMSD and NRMSD values from
+different reference sets and different programs. Generally, these values
+(both RMSD and NRMSD) are the smallest for CONTINLL and the largest for
+SELCON3 (CDSSTR has intermediate value) for a given spectrum and a
+given reference set.<br>
+  </li>
+</ul>
+<ul>
+  <br>
+&nbsp;
+</ul>
+<u><font color="#3333ff"><font size="+1">PROTSS.OUT</font></font></u>
+<ul>
+&nbsp; <br>
+  <font color="#ff0000">PROTSS.OUT</font> file for two samples, with
+different programs and different reference sets, looks like:
+  <p><tt>________________________________________________________________________________</tt><br
+ style="font-family: monospace;">
+  </p>
+  <span style="font-family: monospace;">&nbsp;SAMPLE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp; Flavodoxin (Test: 240-200
+nm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;PROGRAM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp;&nbsp; SELCON3</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;Ref. Prot.
+Set:&nbsp;&nbsp; SMP56</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;Structure&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp;&nbsp;&nbsp; H(r)&nbsp;&nbsp;&nbsp; H(d)&nbsp;&nbsp;&nbsp;
+S(r)&nbsp;&nbsp;&nbsp; S(d)&nbsp;&nbsp;&nbsp;
+Trn&nbsp;&nbsp;&nbsp;&nbsp; Unrd</span><br
+ style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;Fractions&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp;&nbsp;&nbsp; .137&nbsp;&nbsp;&nbsp; .115&nbsp;&nbsp;&nbsp;
+.170&nbsp;&nbsp;&nbsp; .092&nbsp;&nbsp;&nbsp; .214&nbsp;&nbsp;&nbsp; .280</span><br
+ style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;RMSD(Exp-Calc):&nbsp;&nbsp;&nbsp;
+.139</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;NRMSD(Exp-Cal):&nbsp;&nbsp;&nbsp;
+.066</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">________________________________________________________________________________</span><br
+ style="font-family: monospace;">
+  <br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;SAMPLE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp; Triose Phosphate Isomerase (Test: 245-185
+nm)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;PROGRAM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp;&nbsp; CONTINLL</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;Ref. Prot.
+Set:&nbsp;&nbsp; SMP50</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;Structure&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp;&nbsp;&nbsp; H(r)&nbsp;&nbsp;&nbsp; H(d)&nbsp;&nbsp;&nbsp;
+S(r)&nbsp;&nbsp;&nbsp; S(d)&nbsp;&nbsp;&nbsp; Turn&nbsp;&nbsp;&nbsp; Unrd</span><br
+ style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;Fractions&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp;&nbsp;&nbsp; .337&nbsp;&nbsp;&nbsp; .160&nbsp;&nbsp;&nbsp;
+.052&nbsp;&nbsp;&nbsp; .046&nbsp;&nbsp;&nbsp; .166&nbsp;&nbsp;&nbsp; .238</span><br
+ style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;RMSD(Exp-Calc):&nbsp;&nbsp;&nbsp;
+.101</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">&nbsp;NRMSD(Exp-Cal):&nbsp;&nbsp;&nbsp;
+.019</span><br style="font-family: monospace;">
+  <span style="font-family: monospace;">________________________________________________________________________________</span>
+  <p><br>
+&nbsp;<br>
+  </p>
+  <li> The analysis can be performed for a different reference set of
+proteins by changing the IBasis value (<font color="#ff0000">IBasis in
+INPUT </font>file). All output files, except PROTSS.OUT, will be
+overwritten and PROTSS.OUT will be appended. (<font color="#009900">If
+required, an output file should be saved under different name.</font>)
+PROTSS.OUT (<u>Older version</u>; Results will still be same but the
+individual program results look like the sample above) after changing
+IBasis to 2 and 3 and running these programs looks like:</li>
+  <br>
+  <tt>&nbsp;CDSSTR&nbsp;&nbsp;&nbsp; IBasis=1&nbsp;
+SStr:&nbsp;&nbsp;&nbsp; .246&nbsp;&nbsp;&nbsp; .168&nbsp;&nbsp;&nbsp;
+.086&nbsp;&nbsp;&nbsp; .075&nbsp;&nbsp;&nbsp; .195&nbsp;&nbsp;&nbsp; .235</tt> <br>
+  <tt>&nbsp;SELCON3&nbsp;&nbsp; IBasis=1&nbsp; SStr:&nbsp;&nbsp;&nbsp;
+.260&nbsp;&nbsp;&nbsp; .162&nbsp;&nbsp;&nbsp; .076&nbsp;&nbsp;&nbsp;
+.066&nbsp;&nbsp;&nbsp; .198&nbsp;&nbsp;&nbsp; .251</tt> <br>
+  <tt>&nbsp;ContinLL&nbsp; IBasis=1&nbsp; SStr:&nbsp;&nbsp;&nbsp;
+.228&nbsp;&nbsp;&nbsp; .145&nbsp;&nbsp;&nbsp; .082&nbsp;&nbsp;&nbsp;
+.077&nbsp;&nbsp;&nbsp; .198&nbsp;&nbsp;&nbsp; .271</tt> <br>
+  <tt>&nbsp;ContinLL&nbsp; IBasis=2&nbsp; SStr:&nbsp;&nbsp;&nbsp;
+.339&nbsp;&nbsp;&nbsp; .106&nbsp;&nbsp;&nbsp; .162&nbsp;&nbsp;&nbsp;
+.111&nbsp;&nbsp;&nbsp; .023&nbsp;&nbsp;&nbsp; .260</tt> <br>
+  <tt>&nbsp;SELCON3&nbsp;&nbsp; IBasis=2&nbsp; SStr:&nbsp;&nbsp;&nbsp;
+.358&nbsp;&nbsp;&nbsp; .094&nbsp;&nbsp;&nbsp; .148&nbsp;&nbsp;&nbsp;
+.117&nbsp;&nbsp;&nbsp; .027&nbsp;&nbsp;&nbsp; .270</tt> <br>
+  <tt>&nbsp;CDSSTR&nbsp;&nbsp;&nbsp; IBasis=2&nbsp;
+SStr:&nbsp;&nbsp;&nbsp; .343&nbsp;&nbsp;&nbsp; .091&nbsp;&nbsp;&nbsp;
+.169&nbsp;&nbsp;&nbsp; .107&nbsp;&nbsp;&nbsp; .023&nbsp;&nbsp;&nbsp; .268</tt> <br>
+  <tt>&nbsp;SELCON3&nbsp;&nbsp; IBasis=3&nbsp; SStr:&nbsp;&nbsp;&nbsp;
+.264&nbsp;&nbsp;&nbsp; .167&nbsp;&nbsp;&nbsp; .066&nbsp;&nbsp;&nbsp;
+.061&nbsp;&nbsp;&nbsp; .193&nbsp;&nbsp;&nbsp; .263</tt> <br>
+  <tt>&nbsp;ContinLL&nbsp; IBasis=3&nbsp; SStr:&nbsp;&nbsp;&nbsp;
+.256&nbsp;&nbsp;&nbsp; .155&nbsp;&nbsp;&nbsp; .064&nbsp;&nbsp;&nbsp;
+.069&nbsp;&nbsp;&nbsp; .184&nbsp;&nbsp;&nbsp; .272</tt> <br>
+  <tt>&nbsp;CDSSTR&nbsp;&nbsp;&nbsp; IBasis=3&nbsp;
+SStr:&nbsp;&nbsp;&nbsp; .291&nbsp;&nbsp;&nbsp; .171&nbsp;&nbsp;&nbsp;
+.064&nbsp;&nbsp;&nbsp; .063&nbsp;&nbsp;&nbsp; .165&nbsp;&nbsp;&nbsp; .244</tt> <br>
+&nbsp;
+  <p>Note that results from all three values of IBasis (1, 2 and 3)
+have 6 secondary structutres but the values from IBasis=2 are different
+from the other two sets. This is due to different assignments used in
+IBasis=2. However, the results for IBasis=1 and 3 are similar; the
+difference between them are in the wavelength range (178-260 nm and
+185-240 nm) and in the number of proteins (29 and 37).</p>
+</ul>
+<p><br>
+</p>
+<hr align="left" size="1" width="100%"> <br>
+<a name="Detailed OUTPUTS"></a><font color="#3333ff"><font size="+1">OUTPUT
+from Each Program: (<a href="#SELCON3.OUT">SELCON3</a>, <a
+ href="#CDSSTR.OUT">CDSSTR</a>, and <a href="#CONTINLL.OUT">CONTINLL</a>
+and <a href="#CLUSTER.OUT">CLUSTER</a>)</font></font>
+<ul>
+Output from each program contains details of how the final solution is
+arrived at. Most of the output is self-explanatory. If the secondary
+structures estimated include the estimation of distorted helix and
+strand fractions then the number of segments of helix and strand are
+also calculated.<br>
+  <br>
+  <span style="font-weight: bold; color: rgb(255, 102, 0);">Some of the
+features and formatting in the output from the current version of CDPro
+may be different from what is below (Please see SAMPLE outputs for the
+three programs: <a href="SELCON3.SMP">SELCON3.OUT</a>&nbsp; <a
+ href="CONTINLL.SMP">CONTINLL.OUT</a>&nbsp; <a href="CDSSTR.SMP">CDSSTR.OUT</a>.)
+There may be some additional information, but the nature and quality of
+the values are the same.</span><br>
+</ul>
+<hr align="left" size="1" width="100%">
+<p><a name="SELCON3.OUT"></a><u><font color="#3333ff"><font size="+1">SELCON3.OUT</font></font></u> <br>
+&nbsp; </p>
+<p><font color="#ff0000">Header details the references, and options
+(PRINT and IBASIS) selected. The selected reference set of proteins and
+types of secondary structure fractions obtained are indicated.</font> </p>
+<ul>
+  <tt>THE FRACTIONS OF SECONDARY STRUCTURES FROM THE SELF-CONSISTENT
+METHOD</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Sreerama and Woody, Anal. Biochem. (1993),
+209, 32</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Sreerama and Woody, Biochemistry, 33,
+10022-25, (1994),</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Sreerama et al. Protein. Science, 8, 370-380,
+(1999),</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Johnson
+W.C.Jr.,Proteins:Str.Func.Genet.35,307-312(1999)</tt> <br>
+&nbsp;
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IPrint&nbsp; IBasis</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Reference PROTEIN Set Selected:</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; CDDATA.37; SSDATA.37</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Structures: Helix1, Helix2, Strand1,
+Strand2, Turns and Unordered</tt> <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Input information along with the ordering of
+proteins in the reference set and initial guess is printed. The spectral
+and structural information is in BASIS file.</font>
+<ul>
+  <tt>&nbsp;SAMPLE INPUT:&nbsp; Lactate Dehydrogenase CD DATA (178-260
+nm)</tt> <br>
+&nbsp;
+  <p><tt>&nbsp;The wavelength range:&nbsp;&nbsp; 260.0&nbsp; 178.0, is
+different from that of</tt> <br>
+  <tt>&nbsp;the Database proteins:&nbsp; 240.0&nbsp; 185.0</tt> <br>
+  <tt>&nbsp;The No. of CD points =&nbsp;&nbsp; 83</tt> </p>
+  <p><tt>&nbsp;The wavelengths are modified to be within the valid range</tt> </p>
+  <p><tt>&nbsp;Beginning wavelength:&nbsp; 240.00; Ending
+wavelength:&nbsp; 185.00</tt> <br>
+  <tt>&nbsp;Total No of CD points&nbsp; 56</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;Beginning wavelength:&nbsp; 240.00; Ending
+wavelength:&nbsp; 185.00</tt> <br>
+  <tt>&nbsp;Total No of CD points&nbsp; 56</tt> <br>
+  <tt>&nbsp;Secondary structural elements=&nbsp;&nbsp; 6</tt> <br>
+  <tt>&nbsp;Multipilcation FACTOR for CD spectrum= 1.000</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp;SAMPLE CD: FILE from TEST</tt> <br>
+  <tt>&nbsp;&nbsp; -.54&nbsp;&nbsp; -.67&nbsp;&nbsp; -.82&nbsp;&nbsp;
+-.99&nbsp; -1.19&nbsp; -1.41&nbsp; -1.65&nbsp; -1.92&nbsp; -2.20&nbsp;
+-2.49</tt> <br>
+  <tt>&nbsp; -2.79&nbsp; -3.11&nbsp; -3.43&nbsp; -3.71&nbsp;
+-3.93&nbsp; -4.10&nbsp; -4.22&nbsp; -4.29&nbsp; -4.32&nbsp; -4.31</tt> <br>
+  <tt>&nbsp; -4.28&nbsp; -4.22&nbsp; -4.15&nbsp; -4.06&nbsp;
+-3.97&nbsp; -3.87&nbsp; -3.78&nbsp; -3.71&nbsp; -3.67&nbsp; -3.64</tt> <br>
+  <tt>&nbsp; -3.60&nbsp; -3.53&nbsp; -3.36&nbsp; -3.05&nbsp;
+-2.60&nbsp; -2.04&nbsp; -1.40&nbsp;&nbsp; -.68&nbsp;&nbsp;&nbsp;
+.22&nbsp;&nbsp; 1.38</tt> <br>
+  <tt>&nbsp;&nbsp; 2.68&nbsp;&nbsp; 4.00&nbsp;&nbsp; 5.32&nbsp;&nbsp;
+6.63&nbsp;&nbsp; 7.74&nbsp;&nbsp; 8.46&nbsp;&nbsp; 8.91&nbsp;&nbsp;
+9.20&nbsp;&nbsp; 9.27&nbsp;&nbsp; 9.02</tt> <br>
+  <tt>&nbsp;&nbsp; 8.45&nbsp;&nbsp; 7.60&nbsp;&nbsp; 6.63&nbsp;&nbsp;
+5.69&nbsp;&nbsp; 4.80&nbsp;&nbsp; 3.95</tt> </p>
+  <p><tt>&nbsp;Number of Proteins in the database=&nbsp; 37</tt> </p>
+  <p><tt>&nbsp;The SAMPLE data from:&nbsp; TEST</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Ordered DELTA(CD) values :</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; .0000&nbsp;&nbsp; .7942&nbsp;&nbsp;
+.8554&nbsp; 1.3308&nbsp; 1.5276&nbsp; 1.7137&nbsp; 1.8931&nbsp; 1.9142</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; 1.9638&nbsp; 2.0399&nbsp; 2.1560&nbsp;
+2.1766&nbsp; 2.1869&nbsp; 2.2606&nbsp; 2.3609&nbsp; 2.5331</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; 2.5834&nbsp; 2.9485&nbsp; 3.1310&nbsp;
+3.1741&nbsp; 3.2208&nbsp; 3.3008&nbsp; 3.3297&nbsp; 3.4069</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; 3.4870&nbsp; 3.5328&nbsp; 3.6343&nbsp;
+3.9341&nbsp; 3.9860&nbsp; 4.3677&nbsp; 4.8802&nbsp; 4.9138</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; 5.0270&nbsp; 5.0321&nbsp; 5.0449&nbsp;
+5.1182&nbsp; 5.3781</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Ordered List of PROTEINS :</tt> <br>
+  <tt>&nbsp; TEST&nbsp; THML&nbsp; TPI&nbsp;&nbsp; RHD&nbsp;&nbsp;
+SUBN&nbsp; ECOR&nbsp; PGK&nbsp;&nbsp; T4LS</tt> <br>
+  <tt>&nbsp; LYSM&nbsp; CYTC&nbsp; SUBB&nbsp; GPD&nbsp;&nbsp;
+HMRT&nbsp; ADH&nbsp;&nbsp; FLVD&nbsp; GRS</tt> <br>
+  <tt>&nbsp; AZU&nbsp;&nbsp; BLAC&nbsp; RNAS&nbsp; HBN&nbsp;&nbsp;
+GFP&nbsp;&nbsp; PRAL&nbsp; PAPN&nbsp; IFBP</tt> <br>
+  <tt>&nbsp; ColA&nbsp; CONA&nbsp; PPSN&nbsp; SUDS&nbsp;
+TNF&nbsp;&nbsp; CHYT&nbsp; MGLB&nbsp; BNJN</tt> <br>
+  <tt>&nbsp; CGA&nbsp;&nbsp; GCR&nbsp;&nbsp; ELAS&nbsp; CANH&nbsp; BTOX</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;IGUESS = 0; The structure of the Protein with closest CD
+spectrum: THML</tt> </p>
+  <p><tt>&nbsp;Initial Guess:&nbsp;&nbsp;&nbsp; .282&nbsp;&nbsp;&nbsp;
+.133&nbsp;&nbsp;&nbsp; .070&nbsp;&nbsp;&nbsp; .095&nbsp;&nbsp;&nbsp;
+.215&nbsp;&nbsp;&nbsp; .206</tt> <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Solution with all proteins in the basis set,
+corresponding to Hennessey and Johnson method, gives the helix content.</font>
+<ul>
+  <tt>&nbsp;Solution Corresponding to All proteins in the Basis and 5
+SVD vectors</tt> <br>
+  <tt>&nbsp;This corresponds to Hennessey and Johnson Method</tt>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; H(r)&nbsp;&nbsp;
+H(d)&nbsp;&nbsp; S(r)&nbsp;&nbsp; S(d)&nbsp;&nbsp; Trn&nbsp;&nbsp;&nbsp;
+Unrd&nbsp;&nbsp; SUM</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .278&nbsp;&nbsp;
+.146&nbsp;&nbsp; .037&nbsp;&nbsp; .029&nbsp;&nbsp; .106&nbsp;&nbsp;
+.165&nbsp;&nbsp; .762</tt> </p>
+  <p><tt>&nbsp;Helix From H &amp; J Method:&nbsp;&nbsp;&nbsp; .425</tt> <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Solutions with Sum_rule and Fraction _rule.
+Solution corresponds to original SELCON method.</font>
+<ul>
+  <tt>&nbsp;FIRST STAGE:</tt> <br>
+  <tt>&nbsp;Solutions With FIRST TWO Selection Rules:</tt> <br>
+  <tt>&nbsp;This is for the First 19 Iterations only</tt> <br>
+  <tt>&nbsp;Constraints relaxed to get a MIN # of Solns</tt> <br>
+&nbsp; <br>
+&nbsp;
+  <p><tt>&nbsp;ITER: 1; AVE OF&nbsp; 49 SOLN:&nbsp;&nbsp;
+.263&nbsp;&nbsp; .160&nbsp;&nbsp; .070&nbsp;&nbsp; .067&nbsp;&nbsp;
+.195&nbsp;&nbsp; .258</tt> <br>
+  <tt>&nbsp;SUM of SECNDRY STRUCTURE:&nbsp; 1.013</tt> <br>
+  <tt>&nbsp;RMSD with Previous Guess:&nbsp;&nbsp; .0288</tt> </p>
+  <p><tt>&nbsp;ITER: 2; AVE OF&nbsp; 48 SOLN:&nbsp;&nbsp;
+.260&nbsp;&nbsp; .164&nbsp;&nbsp; .070&nbsp;&nbsp; .063&nbsp;&nbsp;
+.192&nbsp;&nbsp; .264</tt> <br>
+  <tt>&nbsp;SUM of SECNDRY STRUCTURE:&nbsp; 1.014</tt> <br>
+  <tt>&nbsp;RMSD with Previous Guess:&nbsp;&nbsp; .0038</tt> </p>
+  <p><tt>&nbsp;SOLN. CONVERGED:&nbsp; 2 ITERATIONS</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;MinSol:&nbsp; 1&nbsp; SUM &lt;&nbsp;&nbsp; .050</tt> </p>
+  <p><tt>&nbsp; Solution at the END of FIRST STAGE:</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; H(r)&nbsp;&nbsp;
+H(d)&nbsp;&nbsp; S(r)&nbsp;&nbsp; S(d)&nbsp;&nbsp; Trn&nbsp;&nbsp;&nbsp;
+Unrd&nbsp;&nbsp; SUM</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .260&nbsp;&nbsp; .164&nbsp;&nbsp;
+.070&nbsp;&nbsp; .063&nbsp;&nbsp; .192&nbsp;&nbsp; .264&nbsp; 1.014</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;First Part Completed.&nbsp; The results roughly
+correspond</tt> <br>
+  <tt>&nbsp;to SELCON and SELCON1 with only 2 selection rules</tt> <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Solutions are screened using the third selection
+rule, Spectral_rule. Solutions correspond to SELCON2 protocol. The
+number of segments are also calculated based on the total helix content
+and the distorted helix content. Calculated spectra is compared with the
+experimental spectra.</font>
+<ul>
+  <tt>&nbsp; SECOND STAGE:</tt> <br>
+  <tt>&nbsp; SOLUTIONS THAT SATISLY THREE SELECTION RULES:</tt> <br>
+&nbsp;
+  <p><tt>&nbsp;&nbsp; I NSol Bas NS&nbsp;&nbsp; H(r)&nbsp;&nbsp;
+H(d)&nbsp;&nbsp; S(r)&nbsp;&nbsp; S(d)&nbsp;&nbsp; Trn&nbsp;&nbsp;&nbsp;
+Unrd&nbsp;&nbsp; SUM&nbsp;&nbsp;&nbsp; RRcn&nbsp;&nbsp; RExp</tt> <br>
+  <tt>&nbsp;&nbsp; 1&nbsp;&nbsp; 3&nbsp;&nbsp; 6&nbsp; 3&nbsp;&nbsp;
+.219&nbsp;&nbsp; .166&nbsp;&nbsp; .086&nbsp;&nbsp; .070&nbsp;&nbsp;
+.203&nbsp;&nbsp; .303&nbsp; 1.047&nbsp;&nbsp; .247&nbsp;&nbsp; .055</tt> <br>
+  <tt>&nbsp;&nbsp; 2&nbsp;&nbsp; 4&nbsp;&nbsp; 7&nbsp; 1&nbsp;&nbsp;
+.218&nbsp;&nbsp; .152&nbsp;&nbsp; .069&nbsp;&nbsp; .074&nbsp;&nbsp;
+.214&nbsp;&nbsp; .297&nbsp; 1.024&nbsp;&nbsp; .349&nbsp;&nbsp; .082</tt> <br>
+  <tt>&nbsp;&nbsp; 3&nbsp;&nbsp; 5&nbsp;&nbsp; 7&nbsp; 2&nbsp;&nbsp;
+.225&nbsp;&nbsp; .157&nbsp;&nbsp; .072&nbsp;&nbsp; .077&nbsp;&nbsp;
+.217&nbsp;&nbsp; .297&nbsp; 1.044&nbsp;&nbsp; .282&nbsp;&nbsp; .055</tt> <br>
+  <tt>&nbsp;&nbsp; 4&nbsp;&nbsp; 8&nbsp;&nbsp; 8&nbsp; 1&nbsp;&nbsp;
+.239&nbsp;&nbsp; .158&nbsp;&nbsp; .061&nbsp;&nbsp; .063&nbsp;&nbsp;
+.184&nbsp;&nbsp; .251&nbsp;&nbsp; .957&nbsp;&nbsp; .349&nbsp;&nbsp; .063</tt> <br>
+  <tt>&nbsp;&nbsp; 5&nbsp;&nbsp; 9&nbsp;&nbsp; 8&nbsp; 2&nbsp;&nbsp;
+.244&nbsp;&nbsp; .161&nbsp;&nbsp; .061&nbsp;&nbsp; .063&nbsp;&nbsp;
+.181&nbsp;&nbsp; .244&nbsp;&nbsp; .953&nbsp;&nbsp; .282&nbsp;&nbsp; .067</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp; 38 162&nbsp; 28&nbsp; 1&nbsp;&nbsp; .276&nbsp;&nbsp;
+.164&nbsp;&nbsp; .087&nbsp;&nbsp; .062&nbsp;&nbsp; .184&nbsp;&nbsp;
+.256&nbsp; 1.029&nbsp;&nbsp; .349&nbsp;&nbsp; .160</tt> <br>
+  <tt>&nbsp; 39 166&nbsp; 28&nbsp; 5&nbsp;&nbsp; .253&nbsp;&nbsp;
+.148&nbsp;&nbsp; .077&nbsp;&nbsp; .067&nbsp;&nbsp; .174&nbsp;&nbsp;
+.280&nbsp;&nbsp; .998&nbsp;&nbsp; .223&nbsp;&nbsp; .616</tt> <br>
+  <tt>&nbsp; 40 170&nbsp; 29&nbsp; 1&nbsp;&nbsp; .276&nbsp;&nbsp;
+.164&nbsp;&nbsp; .089&nbsp;&nbsp; .063&nbsp;&nbsp; .185&nbsp;&nbsp;
+.258&nbsp; 1.035&nbsp;&nbsp; .349&nbsp;&nbsp; .161</tt> <br>
+  <tt>&nbsp; 41 178&nbsp; 30&nbsp; 1&nbsp;&nbsp; .276&nbsp;&nbsp;
+.164&nbsp;&nbsp; .090&nbsp;&nbsp; .064&nbsp;&nbsp; .186&nbsp;&nbsp;
+.261&nbsp; 1.041&nbsp;&nbsp; .349&nbsp;&nbsp; .178</tt> </p>
+  <p><tt>&nbsp; TotSOL &gt;&nbsp; 1</tt> <br>
+  <tt>&nbsp; Limits: ABS(Sum-1.0) &lt;&nbsp;&nbsp; .050; Each Fraction
+&gt;&nbsp; -.030</tt> <br>
+  <tt>&nbsp; RmsCD(Exp,Cal) &lt;&nbsp;&nbsp; .250</tt> </p>
+  <p><tt>&nbsp; SOLUTION AT SECOND STAGE (SELCON2):</tt> <br>
+  <tt>&nbsp; Average Solution From&nbsp; 41&nbsp; Solutions:</tt> </p>
+  <p><tt>&nbsp;&nbsp; H(r)&nbsp;&nbsp; H(d)&nbsp;&nbsp;
+S(r)&nbsp;&nbsp; S(d)&nbsp;&nbsp; Trn&nbsp;&nbsp;&nbsp; Unrd&nbsp;&nbsp;
+SUM&nbsp;&nbsp;&nbsp; RRcn</tt> <br>
+  <tt>&nbsp;&nbsp; .258&nbsp;&nbsp; .164&nbsp;&nbsp; .067&nbsp;&nbsp;
+.063&nbsp;&nbsp; .194&nbsp;&nbsp; .267&nbsp; 1.013&nbsp;&nbsp; .370</tt> </p>
+  <p><tt>&nbsp;Second Part Completed.&nbsp; The results roughly</tt> <br>
+  <tt>&nbsp;correspond SELCON2 with three selection rules</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION the Number
+of SEGMENTS of |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; HELICES (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 4.112&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; STRANDS (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 3.159&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; For YOUR PROTEIN multiply No. of SEGMENTS by</tt> <br>
+  <tt>&nbsp; (Number of Residues) / 100</tt> <br>
+  <tt>&nbsp; e.g., If Number of Residues = 153,&nbsp; Use a FACTOR of
+1.53</tt> </p>
+  <p><tt>&nbsp; Average Length of Segments Remains as Estimated</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION
+Obtained&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+HELICES :&nbsp;&nbsp;&nbsp; 10.265&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+STRANDS :&nbsp;&nbsp;&nbsp;&nbsp; 4.132&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Solutions are screened using the fourth selection
+rule, Helix_rule. Solutions correspond to SELCON3 protocol.The number of
+segments are also calculated based on the total helix content and the
+distorted helix content.Calculated spectra is compared with the
+experimental spectra.</font>
+<blockquote><tt>&nbsp;Now the FOURTH SELECTION RULE is applied to the</tt> <br>
+  <tt>&nbsp;Solutions That SATISFY the first THREE rules.</tt> <br>
+  <tt>&nbsp;The HELIX FRACTION should be with in HLIMITS</tt>
+  <p><tt>&nbsp;Hmin&nbsp;&nbsp; .357 Hmax&nbsp;&nbsp; .443
+HelHJ&nbsp;&nbsp; .425</tt> <br>
+  <tt>&nbsp;HELIX:&nbsp;&nbsp; .434</tt> </p>
+  <p><tt>&nbsp;HLIMITS:&nbsp;&nbsp;&nbsp; .404 ---&gt;&nbsp;&nbsp; .464</tt> </p>
+  <p><tt>&nbsp;&nbsp; 1&nbsp;&nbsp; 5&nbsp;&nbsp; 8&nbsp; 2&nbsp;&nbsp;
+.244&nbsp;&nbsp; .161&nbsp;&nbsp; .061&nbsp;&nbsp; .063&nbsp;&nbsp;
+.181&nbsp;&nbsp; .244&nbsp;&nbsp; .953&nbsp;&nbsp; .067</tt> <br>
+  <tt>&nbsp;&nbsp; 2&nbsp;&nbsp; 6&nbsp;&nbsp; 9&nbsp; 1&nbsp;&nbsp;
+.242&nbsp;&nbsp; .167&nbsp;&nbsp; .059&nbsp;&nbsp; .064&nbsp;&nbsp;
+.197&nbsp;&nbsp; .255&nbsp;&nbsp; .983&nbsp;&nbsp; .066</tt> <br>
+  <tt>&nbsp;&nbsp; 3&nbsp;&nbsp; 7&nbsp;&nbsp; 9&nbsp; 2&nbsp;&nbsp;
+.247&nbsp;&nbsp; .165&nbsp;&nbsp; .060&nbsp;&nbsp; .062&nbsp;&nbsp;
+.185&nbsp;&nbsp; .243&nbsp;&nbsp; .964&nbsp;&nbsp; .146</tt> <br>
+  <tt>&nbsp;&nbsp; 4&nbsp;&nbsp; 8&nbsp; 10&nbsp; 1&nbsp;&nbsp;
+.246&nbsp;&nbsp; .173&nbsp;&nbsp; .057&nbsp;&nbsp; .061&nbsp;&nbsp;
+.205&nbsp;&nbsp; .268&nbsp; 1.010&nbsp;&nbsp; .114</tt> <br>
+  <tt>&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp; 31&nbsp; 38&nbsp; 28&nbsp; 1&nbsp;&nbsp; .276&nbsp;&nbsp;
+.164&nbsp;&nbsp; .087&nbsp;&nbsp; .062&nbsp;&nbsp; .184&nbsp;&nbsp;
+.256&nbsp; 1.029&nbsp;&nbsp; .160</tt> <br>
+  <tt>&nbsp; 32&nbsp; 40&nbsp; 29&nbsp; 1&nbsp;&nbsp; .276&nbsp;&nbsp;
+.164&nbsp;&nbsp; .089&nbsp;&nbsp; .063&nbsp;&nbsp; .185&nbsp;&nbsp;
+.258&nbsp; 1.035&nbsp;&nbsp; .161</tt> <br>
+  <tt>&nbsp; 33&nbsp; 41&nbsp; 30&nbsp; 1&nbsp;&nbsp; .276&nbsp;&nbsp;
+.164&nbsp;&nbsp; .090&nbsp;&nbsp; .064&nbsp;&nbsp; .186&nbsp;&nbsp;
+.261&nbsp; 1.041&nbsp;&nbsp; .178</tt> </p>
+  <p><tt>&nbsp;Final Solution: Aver. of 33 Solns</tt> <br>
+  <tt>&nbsp;PROT&nbsp;&nbsp; H(r)&nbsp;&nbsp; H(d)&nbsp;&nbsp;
+S(r)&nbsp;&nbsp; S(d)&nbsp;&nbsp; Trn&nbsp;&nbsp;&nbsp; Unrd&nbsp;&nbsp;
+SUM&nbsp;&nbsp;&nbsp; RRcn</tt> <br>
+  <tt>&nbsp;TEST&nbsp;&nbsp; .264&nbsp;&nbsp; .167&nbsp;&nbsp;
+.066&nbsp;&nbsp; .061&nbsp;&nbsp; .193&nbsp;&nbsp; .263&nbsp;
+1.015&nbsp;&nbsp; .359</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION the Number
+of SEGMENTS of |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; HELICES (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 4.183&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; STRANDS (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 3.067&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; For YOUR PROTEIN multiply No. of SEGMENTS by</tt> <br>
+  <tt>&nbsp; (Number of Residues) / 100</tt> <br>
+  <tt>&nbsp; e.g., If Number of Residues = 153,&nbsp; Use a FACTOR of
+1.53</tt> </p>
+  <p><tt>&nbsp; Average Length of Segments Remains as Estimated</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION
+Obtained&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+HELICES :&nbsp;&nbsp;&nbsp; 10.311&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+STRANDS :&nbsp;&nbsp;&nbsp;&nbsp; 4.146&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp;</p>
+</blockquote>
+<font color="#ff0000">The solution at the end of the final valid stage
+(If no solutions at the end of third stage, solution at the end of
+second stage is selected) is appended to PROTSS.OUT file, which looks
+like,</font>
+<blockquote><tt><font color="#000000">&nbsp;SELCON3&nbsp;&nbsp;
+IBasis=3&nbsp; SStr:&nbsp;&nbsp;&nbsp; .264&nbsp;&nbsp;&nbsp;
+.167&nbsp;&nbsp;&nbsp; .066&nbsp;&nbsp;&nbsp; .061&nbsp;&nbsp;&nbsp;
+.193&nbsp;&nbsp;&nbsp; .263</font></tt></blockquote>
+<font color="#ff0000">The calculated CD spectra corresponding to the
+solution is also output in a text file (CALCCD.OUT) for importing into
+any grapics software.</font>
+<hr align="left" size="1" width="100%">
+<p><a name="CDSSTR.OUT"></a><u><font color="#3333ff"><font size="+1">CDSSTR.OUT</font></font></u> </p>
+<ul>
+&nbsp;
+</ul>
+<font color="#ff0000">Header details the references, and options (PRINT
+and IBASIS) selected. The selected reference set of proteins and types
+of secondary structure fractions obtained are indicated.</font>
+<ul>
+&nbsp; <br>
+  <tt>&nbsp;&nbsp; THE FRACTIONS OF SECONDARY STRUCTURES FROM</tt> <br>
+  <tt>&nbsp;&nbsp; THE CDsstr Program (variable selection method)</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; Johnson W.C. Proteins:Struc.Func.Genet.
+35, 307-312 (1999)</tt>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Program Modified by Sreerama.
+N.(1999),</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For use with CDPro reference
+proteins</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IPrint&nbsp; IBasis</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Reference PROTEIN Set Selected:</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; CDDATA.37; SSDATA.37</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Structures: Helix1, Helix2, Strand1,
+Strand2, Turns and Unordered</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp; Number of Helices and Strands Calculated</tt> <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Input information is printed.</font>
+<ul>
+  <tt>SAMPLE INPUT:&nbsp; Lactate Dehydrogenase CD DATA (178-260 nm)</tt> <br>
+&nbsp;
+  <p><tt>&nbsp;The wavelength range:&nbsp;&nbsp; 260.0&nbsp; 178.0, is
+different from that of</tt> <br>
+  <tt>&nbsp;the Database proteins:&nbsp; 240.0&nbsp; 185.0</tt> <br>
+  <tt>&nbsp;The No. of CD points =&nbsp;&nbsp; 83</tt> </p>
+  <p><tt>&nbsp;The wavelengths are modified to be within the valid range</tt> </p>
+  <p><tt>&nbsp;Beginning wavelength:&nbsp; 240.00; Ending
+wavelength:&nbsp; 185.00</tt> <br>
+  <tt>&nbsp;Total No of CD points&nbsp; 56</tt> <br>
+  <tt>&nbsp;Secondary structural elements=&nbsp;&nbsp; 6</tt> <br>
+  <tt>&nbsp;Multipilcation FACTOR for CD spectrum= 1.000</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp;SAMPLE CD:</tt> </p>
+  <p><tt>&nbsp;SAMPLE INPUT:&nbsp; Lactate Dehydrogenase CD DATA
+(178-260 nm)</tt> </p>
+  <p><tt>&nbsp;&nbsp; -.54&nbsp;&nbsp; -.67&nbsp;&nbsp;
+-.82&nbsp;&nbsp; -.99&nbsp; -1.19&nbsp; -1.41&nbsp; -1.65&nbsp;
+-1.92&nbsp; -2.20&nbsp; -2.49</tt> <br>
+  <tt>&nbsp; -2.79&nbsp; -3.11&nbsp; -3.43&nbsp; -3.71&nbsp;
+-3.93&nbsp; -4.10&nbsp; -4.22&nbsp; -4.29&nbsp; -4.32&nbsp; -4.31</tt> <br>
+  <tt>&nbsp; -4.28&nbsp; -4.22&nbsp; -4.15&nbsp; -4.06&nbsp;
+-3.97&nbsp; -3.87&nbsp; -3.78&nbsp; -3.71&nbsp; -3.67&nbsp; -3.64</tt> <br>
+  <tt>&nbsp; -3.60&nbsp; -3.53&nbsp; -3.36&nbsp; -3.05&nbsp;
+-2.60&nbsp; -2.04&nbsp; -1.40&nbsp;&nbsp; -.68&nbsp;&nbsp;&nbsp;
+.22&nbsp;&nbsp; 1.38</tt> <br>
+  <tt>&nbsp;&nbsp; 2.68&nbsp;&nbsp; 4.00&nbsp;&nbsp; 5.32&nbsp;&nbsp;
+6.63&nbsp;&nbsp; 7.74&nbsp;&nbsp; 8.46&nbsp;&nbsp; 8.91&nbsp;&nbsp;
+9.20&nbsp;&nbsp; 9.27&nbsp;&nbsp; 9.02</tt> <br>
+  <tt>&nbsp;&nbsp; 8.45&nbsp;&nbsp; 7.60&nbsp;&nbsp; 6.63&nbsp;&nbsp;
+5.69&nbsp;&nbsp; 4.80&nbsp;&nbsp; 3.95</tt> </p>
+  <p><tt>&nbsp; Proteins: 36;&nbsp; CD data: 56;&nbsp; Sec Str:&nbsp; 6</tt></p>
+</ul>
+<tt><font color="#ff0000"><font size="+1">AND</font></font></tt>
+<ul>
+  <tt>&nbsp;OUTPUT FROM CDsstr Program</tt>
+  <p><tt>&nbsp;NbasCD= 36&nbsp;&nbsp; Nwave= 56&nbsp;&nbsp; Npro=&nbsp;
+1&nbsp;&nbsp; ncomb=400&nbsp;&nbsp; icombf=100000 Nsstr=&nbsp; 6</tt> <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Solution with all proteins in the basis set,
+corresponding to Hennessey and Johnson method, gives the helix content.</font>
+<ul>
+  <tt>&nbsp;Helix from H and J SVD with all basis proteins
+is&nbsp;&nbsp; .425</tt>
+</ul>
+<font color="#ff0000">Solutions from CDSSTR are selected from among the
+400 valid solutions which satisfy the Sum_rule and Fraction_rule. These
+are obtained by selecting a minimal basis set of EIGHT proteins randomly
+selected from the reference set, and solving for the structure in the
+self-consistent formalism. The final solution will be the average of
+solutions that satisfy the Helix_rule.</font>
+<blockquote><tt>Valid Solutions (combinations):</tt> <br>
+  <tt>&nbsp;Number&nbsp; SComb&nbsp; H(r)&nbsp; H(d)&nbsp; S(r)&nbsp;
+S(d)&nbsp; Trn&nbsp;&nbsp; Unrd</tt> <br>
+  <tt>&nbsp; Hmin:&nbsp;&nbsp; .44;&nbsp; Hmax:&nbsp;&nbsp; .50</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;
+3&nbsp;&nbsp; .29&nbsp;&nbsp; .17&nbsp;&nbsp; .16&nbsp;&nbsp;
+.10&nbsp;&nbsp; .12&nbsp;&nbsp; .18</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;
+4&nbsp;&nbsp; .30&nbsp;&nbsp; .15&nbsp;&nbsp; .01&nbsp;&nbsp;
+.07&nbsp;&nbsp; .21&nbsp;&nbsp; .27</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .</tt>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 91&nbsp;&nbsp; 394&nbsp;&nbsp;
+.26&nbsp;&nbsp; .19&nbsp;&nbsp; .05&nbsp;&nbsp; .07&nbsp;&nbsp;
+.19&nbsp;&nbsp; .27</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 92&nbsp;&nbsp; 396&nbsp;&nbsp;
+.29&nbsp;&nbsp; .16&nbsp; -.03&nbsp;&nbsp; .06&nbsp;&nbsp;
+.23&nbsp;&nbsp; .24</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 93&nbsp;&nbsp; 398&nbsp;&nbsp;
+.30&nbsp;&nbsp; .17&nbsp;&nbsp; .11&nbsp;&nbsp; .06&nbsp;&nbsp;
+.12&nbsp;&nbsp; .25</tt> </p>
+  <p><tt>&nbsp;Predicted:&nbsp; H(r)= .29&nbsp; H(d)= .18&nbsp; S(r)=
+.06&nbsp; S(d)= .06&nbsp; Trn = .17&nbsp; Unrd= .24</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+isstr=400 icntf=&nbsp; 93</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION the Number
+of SEGMENTS of |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; HELICES (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 4.418&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; STRANDS (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 3.235&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; For YOUR PROTEIN multiply No. of SEGMENTS by</tt> <br>
+  <tt>&nbsp; (Number of Residues) / 100</tt> <br>
+  <tt>&nbsp; e.g., If Number of Residues = 153,&nbsp; Use a FACTOR of
+1.53</tt> </p>
+  <p><tt>&nbsp; Average Length of Segments Remains as Estimated</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION
+Obtained&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+HELICES :&nbsp;&nbsp;&nbsp; 10.453&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+STRANDS :&nbsp;&nbsp;&nbsp;&nbsp; 3.990&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp; <br>
+&nbsp;</p>
+</blockquote>
+<font color="#ff0000">The solution is appended to PROTSS.OUT file,
+which looks like,</font>
+<blockquote><tt>&nbsp;CDSSTR&nbsp;&nbsp;&nbsp; IBasis=3&nbsp;
+SStr:&nbsp;&nbsp;&nbsp; .285&nbsp;&nbsp;&nbsp; .177&nbsp;&nbsp;&nbsp;
+.064&nbsp;&nbsp;&nbsp; .065&nbsp;&nbsp;&nbsp; .173&nbsp;&nbsp;&nbsp; .240</tt></blockquote>
+<font color="#ff0000">The reconstructed CD spectra is output in a text
+file (RECONCD.OUT) for importing into any grapics software.</font> <br>
+<hr align="left" size="1" width="100%"> <br>
+&nbsp;
+<p><a name="CONTINLL.OUT"></a><u><font color="#3333ff">CONTINLL.OUT</font></u> <br>
+&nbsp; </p>
+<p><font color="#ff0000">Header details the references, and options
+(PRINT and IBASIS) selected. The selected reference set of proteins and
+types of secondary structure fractions obtained are indicated.</font> </p>
+<ul>
+&nbsp; <br>
+  <tt>&nbsp; THE FRACTIONS OF SECONDARY STRUCTURES FROM THE CONTIN
+METHOD</tt> <br>
+  <tt>&nbsp; Provencher &amp; Glockner, Biochemstry. 20, 33-37(1981)</tt>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp; Program Modified by Sreerama.
+N.(1999),</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; For use with CDPro reference proteins</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IPrint&nbsp; IBasis</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Reference PROTEIN Set Selected:</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; CDDATA.37; SSDATA.37</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Structures: Helix1, Helix2, Strand1,
+Strand2, Turns and Unordered</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp; Number of Helices and Strands Calculated</tt> <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Input information along with the ordered list of
+proteins is printed. Oredered list of proteins in numbered and the
+corresponding spectral and structural information is in BASIS.PG file.</font>
+<ul>
+  <tt>&nbsp;&nbsp;&nbsp; SAMPLE INPUT:&nbsp; Lactate Dehydrogenase CD
+DATA (178-260 nm)</tt> <br>
+&nbsp;
+  <p><tt>&nbsp;The wavelength range:&nbsp;&nbsp; 260.0&nbsp; 178.0, is
+different from that of</tt> <br>
+  <tt>&nbsp;the Database proteins:&nbsp; 240.0&nbsp; 185.0</tt> <br>
+  <tt>&nbsp;The No. of CD points =&nbsp;&nbsp; 83</tt> </p>
+  <p><tt>&nbsp;The wavelengths are modified to be within the valid range</tt> </p>
+  <p><tt>&nbsp;Beginning wavelength:&nbsp; 240.00; Ending
+wavelength:&nbsp; 185.00</tt> <br>
+  <tt>&nbsp;Total No of CD points&nbsp; 56</tt> <br>
+  <tt>&nbsp;Secondary structural elements=&nbsp;&nbsp; 6</tt> <br>
+  <tt>&nbsp;Multipilcation FACTOR for CD spectrum= 1.000</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp;SAMPLE CD: FILE from Test</tt> <br>
+  <tt>&nbsp;&nbsp; -.54&nbsp;&nbsp; -.67&nbsp;&nbsp; -.82&nbsp;&nbsp;
+-.99&nbsp; -1.19&nbsp; -1.41&nbsp; -1.65&nbsp; -1.92&nbsp; -2.20&nbsp;
+-2.49</tt> <br>
+  <tt>&nbsp; -2.79&nbsp; -3.11&nbsp; -3.43&nbsp; -3.71&nbsp;
+-3.93&nbsp; -4.10&nbsp; -4.22&nbsp; -4.29&nbsp; -4.32&nbsp; -4.31</tt> <br>
+  <tt>&nbsp; -4.28&nbsp; -4.22&nbsp; -4.15&nbsp; -4.06&nbsp;
+-3.97&nbsp; -3.87&nbsp; -3.78&nbsp; -3.71&nbsp; -3.67&nbsp; -3.64</tt> <br>
+  <tt>&nbsp; -3.60&nbsp; -3.53&nbsp; -3.36&nbsp; -3.05&nbsp;
+-2.60&nbsp; -2.04&nbsp; -1.40&nbsp;&nbsp; -.68&nbsp;&nbsp;&nbsp;
+.22&nbsp;&nbsp; 1.38</tt> <br>
+  <tt>&nbsp;&nbsp; 2.68&nbsp;&nbsp; 4.00&nbsp;&nbsp; 5.32&nbsp;&nbsp;
+6.63&nbsp;&nbsp; 7.74&nbsp;&nbsp; 8.46&nbsp;&nbsp; 8.91&nbsp;&nbsp;
+9.20&nbsp;&nbsp; 9.27&nbsp;&nbsp; 9.02</tt> <br>
+  <tt>&nbsp;&nbsp; 8.45&nbsp;&nbsp; 7.60&nbsp;&nbsp; 6.63&nbsp;&nbsp;
+5.69&nbsp;&nbsp; 4.80&nbsp;&nbsp; 3.95</tt> </p>
+  <p><tt>&nbsp;Beginning wavelength:&nbsp; 240.00; Ending
+wavelength:&nbsp; 185.00</tt> <br>
+  <tt>&nbsp;Total No of CD points&nbsp; 56</tt> <br>
+  <tt>&nbsp;Secondary structural elements=&nbsp;&nbsp; 6</tt> <br>
+  <tt>&nbsp;Multipilcation FACTOR for CD spectrum= 1.000</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Ordered DELTA(CD) values :</tt> <br>
+  <tt>&nbsp;&nbsp; .794&nbsp;&nbsp; .855&nbsp; 1.331&nbsp; 1.528&nbsp;
+1.714&nbsp; 1.893&nbsp; 1.914&nbsp; 1.964&nbsp; 2.040&nbsp; 2.156</tt> <br>
+  <tt>&nbsp; 2.177&nbsp; 2.187&nbsp; 2.261&nbsp; 2.361&nbsp;
+2.533&nbsp; 2.583&nbsp; 2.949&nbsp; 3.131&nbsp; 3.174&nbsp; 3.221</tt> <br>
+  <tt>&nbsp; 3.301&nbsp; 3.330&nbsp; 3.407&nbsp; 3.487&nbsp;
+3.533&nbsp; 3.634&nbsp; 3.934&nbsp; 3.986&nbsp; 4.368&nbsp; 4.880</tt> <br>
+  <tt>&nbsp; 4.914&nbsp; 5.027&nbsp; 5.032&nbsp; 5.045&nbsp;
+5.118&nbsp; 5.378</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Ordered List of PROTEINS :</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;
+36&nbsp;&nbsp; 15&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp;
+4&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp; 12</tt> <br>
+  <tt>&nbsp;&nbsp; 13&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp; 33&nbsp;&nbsp;
+11&nbsp;&nbsp; 35&nbsp;&nbsp; 20&nbsp;&nbsp; 18&nbsp;&nbsp;
+16&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; 31</tt> <br>
+  <tt>&nbsp;&nbsp; 23&nbsp;&nbsp; 14&nbsp;&nbsp; 30&nbsp;&nbsp;
+29&nbsp;&nbsp; 24&nbsp;&nbsp; 17&nbsp;&nbsp; 27&nbsp;&nbsp;
+26&nbsp;&nbsp; 19&nbsp;&nbsp;&nbsp; 1</tt> <br>
+  <tt>&nbsp;&nbsp; 25&nbsp;&nbsp; 32&nbsp;&nbsp; 22&nbsp;&nbsp;
+21&nbsp;&nbsp; 34&nbsp;&nbsp; 28</tt> <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Solution with all proteins in the basis set gives
+the helix content and solution corresponds to the original CONTIN
+method. CONTIN gives a list of solutions with varying values of
+regularizer and we have selected the solution with the least standard
+error as the best solution. The CONTIN selected solution, solution based
+on degrees of freedom are summarized in SUMMARY.PG and the complete
+CONTIN output can be generated using IPRINT option.</font>
+<ul>
+  <tt>&nbsp;Soln. with ALL Prot:&nbsp;&nbsp;&nbsp;
+.258&nbsp;&nbsp;&nbsp; .146&nbsp;&nbsp;&nbsp; .073&nbsp;&nbsp;&nbsp;
+.077&nbsp;&nbsp;&nbsp; .178&nbsp;&nbsp;&nbsp; .268</tt>
+</ul>
+<p><br>
+<font color="#ff0000">The variable selection is performed by removing
+the least similar protein (to the test protein) and the solutions that
+satisfy the Helix_rule are listed and averaged to get the final solution.</font> </p>
+<p><font color="#ff0000">CONTIN gives a list of solutions with varying
+values of regularizer and we have selected the solution with the least
+standard error as the best solution. The CONTIN selected solution,
+solution based on degrees of freedom are summarized in SUMMARY.PG and
+the complete CONTIN output can be generated using IPRINT option. With
+IPRINT=0 only the final CONTIN output (with number of proteins = 6) will
+be in CONTIN.OUT.</font> </p>
+<ul>
+  <tt>&nbsp;HMin:&nbsp;&nbsp; .389&nbsp; HMax:&nbsp;&nbsp; .449</tt>
+  <p><tt>&nbsp;VALID SOLUTIONS:</tt> </p>
+  <p><tt>ISol&nbsp;&nbsp; N&nbsp;&nbsp;&nbsp; H(r)&nbsp;&nbsp;&nbsp;
+H(d)&nbsp;&nbsp;&nbsp; S(r)&nbsp;&nbsp;&nbsp; S(d)&nbsp;&nbsp;&nbsp;
+Turn&nbsp;&nbsp;&nbsp; Unrd</tt> </p>
+  <p><tt>&nbsp; 36&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;
+.258&nbsp;&nbsp;&nbsp; .146&nbsp;&nbsp;&nbsp; .073&nbsp;&nbsp;&nbsp;
+.077&nbsp;&nbsp;&nbsp; .178&nbsp;&nbsp;&nbsp; .268</tt> <br>
+  <tt>&nbsp; 35&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp; .257&nbsp;&nbsp;&nbsp;
+.146&nbsp;&nbsp;&nbsp; .076&nbsp;&nbsp;&nbsp; .078&nbsp;&nbsp;&nbsp;
+.178&nbsp;&nbsp;&nbsp; .265</tt> <br>
+  <tt>&nbsp; 34&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp; .256&nbsp;&nbsp;&nbsp;
+.146&nbsp;&nbsp;&nbsp; .076&nbsp;&nbsp;&nbsp; .077&nbsp;&nbsp;&nbsp;
+.179&nbsp;&nbsp;&nbsp; .266</tt> <br>
+  <tt>&nbsp; 33&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp; .258&nbsp;&nbsp;&nbsp;
+.147&nbsp;&nbsp;&nbsp; .077&nbsp;&nbsp;&nbsp; .077&nbsp;&nbsp;&nbsp;
+.175&nbsp;&nbsp;&nbsp; .266</tt> <br>
+  <tt>&nbsp; 32&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp; .253&nbsp;&nbsp;&nbsp;
+.144&nbsp;&nbsp;&nbsp; .077&nbsp;&nbsp;&nbsp; .077&nbsp;&nbsp;&nbsp;
+.184&nbsp;&nbsp;&nbsp; .265</tt> <br>
+  <tt>&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp;&nbsp; .</tt> <br>
+  <tt>&nbsp; 10&nbsp; 27&nbsp;&nbsp;&nbsp; .252&nbsp;&nbsp;&nbsp;
+.171&nbsp;&nbsp;&nbsp; .083&nbsp;&nbsp;&nbsp; .072&nbsp;&nbsp;&nbsp;
+.178&nbsp;&nbsp;&nbsp; .245</tt> <br>
+  <tt>&nbsp;&nbsp; 9&nbsp; 28&nbsp;&nbsp;&nbsp; .242&nbsp;&nbsp;&nbsp;
+.171&nbsp;&nbsp;&nbsp; .076&nbsp;&nbsp;&nbsp; .070&nbsp;&nbsp;&nbsp;
+.186&nbsp;&nbsp;&nbsp; .255</tt> <br>
+  <tt>&nbsp;&nbsp; 8&nbsp; 29&nbsp;&nbsp;&nbsp; .249&nbsp;&nbsp;&nbsp;
+.176&nbsp;&nbsp;&nbsp; .074&nbsp;&nbsp;&nbsp; .064&nbsp;&nbsp;&nbsp;
+.179&nbsp;&nbsp;&nbsp; .257</tt> <br>
+  <tt>&nbsp;&nbsp; 7&nbsp; 30&nbsp;&nbsp;&nbsp; .248&nbsp;&nbsp;&nbsp;
+.175&nbsp;&nbsp;&nbsp; .075&nbsp;&nbsp;&nbsp; .065&nbsp;&nbsp;&nbsp;
+.178&nbsp;&nbsp;&nbsp; .260</tt> </p>
+  <p><tt>AVE(30):&nbsp;&nbsp;&nbsp; .256&nbsp;&nbsp;&nbsp;
+.155&nbsp;&nbsp;&nbsp; .064&nbsp;&nbsp;&nbsp; .069&nbsp;&nbsp;&nbsp;
+.184&nbsp;&nbsp;&nbsp; .272</tt> </p>
+  <p><tt>--------------------------------------------------------------------------------</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION the Number
+of SEGMENTS of |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; HELICES (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 3.872&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; STRANDS (Per 100 Residues)
+are:&nbsp;&nbsp;&nbsp;&nbsp; 3.432&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; For YOUR PROTEIN multiply No. of SEGMENTS by</tt> <br>
+  <tt>&nbsp; (Number of Residues) / 100</tt> <br>
+  <tt>&nbsp; e.g., If Number of Residues = 153,&nbsp; Use a FACTOR of
+1.53</tt> </p>
+  <p><tt>&nbsp; Average Length of Segments Remains as Estimated</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; Based on the SOLUTION
+Obtained&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+|</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+HELICES :&nbsp;&nbsp;&nbsp; 10.623&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; The AVERAGE LENGTH of
+STRANDS :&nbsp;&nbsp;&nbsp;&nbsp; 3.868&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;
++--------------------------------------------------+</tt> <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">The solution is appended to PROTSS.OUT file,
+which looks like,</font>
+<blockquote><tt>&nbsp;ContinLL&nbsp; IBasis=3&nbsp;
+SStr:&nbsp;&nbsp;&nbsp; .256&nbsp;&nbsp;&nbsp; .155&nbsp;&nbsp;&nbsp;
+.064&nbsp;&nbsp;&nbsp; .069&nbsp;&nbsp;&nbsp; .184&nbsp;&nbsp;&nbsp; .272</tt></blockquote>
+<font color="#ff0000">The file SUMMARY.PG contains the three solutions
+from CONTIN (1. CONTIN chosen solution, 2. Solution based on minimum
+degrees of freedom, and 3. Solution with minimum error) for all variable
+selection based reference sets. This looks like:</font>
+<blockquote><tt>--------------------------------------------------------------------------------</tt>
+  <p><tt>&nbsp;&nbsp;&nbsp; Number of Proteins: 36</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>[1] CONTIN-Chosen Solution;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ISol= 12&nbsp;&nbsp; .37&nbsp;&nbsp; .22&nbsp;&nbsp; .19&nbsp;&nbsp;
+.10&nbsp;&nbsp; .08&nbsp;&nbsp; .05</tt> <br>
+  <tt>[2] Ave of&nbsp; 5 Solns with Deg Freed:&nbsp; 7-16&nbsp;&nbsp;
+.26&nbsp;&nbsp; .14&nbsp;&nbsp; .07&nbsp;&nbsp; .08&nbsp;&nbsp;
+.18&nbsp;&nbsp; .27</tt> <br>
+  <tt>[3] Solution with Min. Error;&nbsp;&nbsp;&nbsp; Isol=&nbsp;
+9&nbsp;&nbsp; .26&nbsp;&nbsp; .15&nbsp;&nbsp; .07&nbsp;&nbsp;
+.08&nbsp;&nbsp; .18&nbsp;&nbsp; .27</tt> <br>
+  <tt>--------------------------------------------------------------------------------</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Number of Proteins: 35</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>[1] CONTIN-Chosen Solution;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ISol= 12&nbsp;&nbsp; .37&nbsp;&nbsp; .22&nbsp;&nbsp; .19&nbsp;&nbsp;
+.10&nbsp;&nbsp; .08&nbsp;&nbsp; .05</tt> <br>
+  <tt>[2] Ave of&nbsp; 5 Solns with Deg Freed:&nbsp; 7-16&nbsp;&nbsp;
+.26&nbsp;&nbsp; .14&nbsp;&nbsp; .08&nbsp;&nbsp; .08&nbsp;&nbsp;
+.17&nbsp;&nbsp; .26</tt> <br>
+  <tt>[3] Solution with Min. Error;&nbsp;&nbsp;&nbsp; Isol=&nbsp;
+9&nbsp;&nbsp; .26&nbsp;&nbsp; .15&nbsp;&nbsp; .08&nbsp;&nbsp;
+.08&nbsp;&nbsp; .18&nbsp;&nbsp; .26</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;.</tt> <br>
+  <tt>&nbsp;.</tt> <br>
+  <tt>&nbsp;.</tt> <br>
+  <tt>&nbsp;.</tt> <br>
+  <tt>&nbsp;.</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Number of Proteins:&nbsp; 7</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>[1] CONTIN-Chosen Solution;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ISol= 12&nbsp;&nbsp; .24&nbsp;&nbsp; .18&nbsp;&nbsp; .08&nbsp;&nbsp;
+.06&nbsp;&nbsp; .17&nbsp;&nbsp; .27</tt> <br>
+  <tt>[2] Ave of 11 Solns with Deg Freed:&nbsp; 7-16&nbsp;&nbsp;
+.21&nbsp;&nbsp; .20&nbsp;&nbsp; .08&nbsp;&nbsp; .06&nbsp;&nbsp;
+.15&nbsp;&nbsp; .30</tt> <br>
+  <tt>[3] Solution with Min. Error;&nbsp;&nbsp;&nbsp; Isol=
+11&nbsp;&nbsp; .25&nbsp;&nbsp; .17&nbsp;&nbsp; .08&nbsp;&nbsp;
+.06&nbsp;&nbsp; .18&nbsp;&nbsp; .26</tt> <br>
+  <tt>--------------------------------------------------------------------------------</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp; Number of Proteins:&nbsp; 6</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>[1] CONTIN-Chosen Solution;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ISol= 12&nbsp;&nbsp; .21&nbsp;&nbsp; .18&nbsp;&nbsp; .09&nbsp;&nbsp;
+.07&nbsp;&nbsp; .16&nbsp;&nbsp; .29</tt> <br>
+  <tt>[2] Ave of 11 Solns with Deg Freed:&nbsp; 7-16&nbsp;&nbsp;
+.19&nbsp;&nbsp; .20&nbsp;&nbsp; .09&nbsp;&nbsp; .06&nbsp;&nbsp;
+.15&nbsp;&nbsp; .32</tt> <br>
+  <tt>[3] Solution with Min. Error;&nbsp;&nbsp;&nbsp; Isol=
+11&nbsp;&nbsp; .21&nbsp;&nbsp; .17&nbsp;&nbsp; .09&nbsp;&nbsp;
+.07&nbsp;&nbsp; .18&nbsp;&nbsp; .28</tt> <br>
+  <tt>********************************************************************************</tt> <br>
+&nbsp;</p>
+</blockquote>
+<hr align="left" size="1" width="100%"> <br>
+&nbsp;
+<p><a name="CLUSTER.OUT"></a><u><font color="#3333ff">CLUSTER.OUT</font></u> <br>
+&nbsp; </p>
+<p><font color="#ff0000">Header details the references and the
+reference sets of proteins.</font> </p>
+<ul>
+  <tt>________________________________________________________________________________</tt>
+  <p><tt>&nbsp; Determination of TERTIARY CLASS using the method of</tt> <br>
+  <tt>&nbsp; Venyaminov and Vassilenko, Anal. Biochem. 222, 176 (1994)</tt> </p>
+  <p><tt>&nbsp; Program Modified by Sreerama. N.(2000) for use with
+CDPro</tt> </p>
+  <p><tt>&nbsp; The TERTIARY CLASSES are All-Alpha, All-beta,
+Alpha-Beta,&nbsp;&nbsp;&nbsp;&nbsp; and Denatured</tt> </p>
+  <p><tt>&nbsp; CD analysis could be performed for former three classes</tt> </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">Input information is printed.</font>
+<ul>
+&nbsp; <br>
+  <tt>&nbsp;SAMPLE INPUT:&nbsp; Lactate Dehydrogenase CD DATA (178-260
+nm)</tt> <br>
+&nbsp;
+  <p><tt>&nbsp;The wavelength range:&nbsp;&nbsp; 260.0&nbsp; 178.0, is
+different from that of</tt> <br>
+  <tt>&nbsp;Anal.Biochem.Paper:&nbsp; 236.0&nbsp; 190.0</tt> <br>
+  <tt>&nbsp;The No. of CD points =&nbsp;&nbsp; 83</tt> </p>
+  <p><tt>&nbsp;The wavelengths are modified to be within the valid range</tt> </p>
+  <p><tt>&nbsp;Beginning wavelength:&nbsp; 190.00; Ending
+wavelength:&nbsp; 236.00</tt> <br>
+  <tt>&nbsp;Total No of CD points&nbsp; 26</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;&nbsp; 8.450&nbsp;&nbsp; 9.270&nbsp;&nbsp;
+8.910&nbsp;&nbsp; 7.740&nbsp;&nbsp; 5.320&nbsp;&nbsp;
+2.680&nbsp;&nbsp;&nbsp; .220&nbsp; -1.400&nbsp; -2.600&nbsp; -3.360</tt> <br>
+  <tt>&nbsp; -3.600&nbsp; -3.670&nbsp; -3.780&nbsp; -3.970&nbsp;
+-4.150&nbsp; -4.280&nbsp; -4.320&nbsp; -4.220&nbsp; -3.930&nbsp; -3.430</tt> <br>
+  <tt>&nbsp; -2.790&nbsp; -2.200&nbsp; -1.650&nbsp; -1.190&nbsp;&nbsp;
+1.000</tt> <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<font color="#ff0000">OUTPUT: Position of the given CD spectrum w.r.t.
+each pair of classes. + indicates the assignment.</font>
+<ul>
+&nbsp; <br>
+  <tt>&nbsp; Weight*CD&nbsp;&nbsp;&nbsp;
+Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class</tt> <br>
+  <tt>--------------------------------------------</tt> <br>
+  <tt>&nbsp;&nbsp; -27.082&nbsp;&nbsp; Alfa+Beta -&nbsp;&nbsp;&nbsp;
+All Alpha&nbsp; +</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; 19.505&nbsp;&nbsp; Alfa/Beta
++&nbsp;&nbsp;&nbsp; All Alpha&nbsp; -</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; 42.492&nbsp;&nbsp; Alfa/Beta
++&nbsp;&nbsp;&nbsp; Alfa+Beta&nbsp; -</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; -8.742&nbsp;&nbsp; All Beta&nbsp;
+-&nbsp;&nbsp;&nbsp; All Alpha&nbsp; +</tt> <br>
+  <tt>&nbsp;&nbsp; -12.475&nbsp;&nbsp; All Beta&nbsp;
+-&nbsp;&nbsp;&nbsp; Alfa+Beta&nbsp; +</tt> <br>
+  <tt>&nbsp;&nbsp; -13.693&nbsp;&nbsp; All Beta&nbsp;
+-&nbsp;&nbsp;&nbsp; Alfa/Beta&nbsp; +</tt> <br>
+  <tt>&nbsp;&nbsp; -21.693&nbsp;&nbsp; Denatured -&nbsp;&nbsp;&nbsp;
+All Alpha&nbsp; +</tt> <br>
+  <tt>&nbsp;&nbsp; -34.219&nbsp;&nbsp; Denatured -&nbsp;&nbsp;&nbsp;
+Alfa+Beta&nbsp; +</tt> <br>
+  <tt>&nbsp;&nbsp; -20.728&nbsp;&nbsp; Denatured -&nbsp;&nbsp;&nbsp;
+Alfa/Beta&nbsp; +</tt> <br>
+  <tt>&nbsp; -132.492&nbsp;&nbsp; Denatured -&nbsp;&nbsp;&nbsp; All
+Beta&nbsp;&nbsp; +</tt>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Class&nbsp;&nbsp;&nbsp;&nbsp;
+Score</tt> <br>
+  <tt>--------------------------</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; All Alpha&nbsp;&nbsp;&nbsp; 3</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Alfa+Beta&nbsp;&nbsp;&nbsp; 2</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Alfa/Beta&nbsp;&nbsp;&nbsp; 4</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; All Beta&nbsp;&nbsp;&nbsp;&nbsp; 1</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; Denatured&nbsp;&nbsp;&nbsp; 0</tt> </p>
+  <p><tt>&nbsp; Maximum Score Obtained:&nbsp; 4</tt> <br>
+  <tt>&nbsp; PREDICTED Tertiary Class: Alfa/Beta</tt></p>
+</ul>
+<p><br>
+<font color="#ff0000">Predicted class and cration of class specific
+files.</font> </p>
+<ul>
+&nbsp; <br>
+  <tt>&nbsp; Program has created CDDATA.CA and SSDATA.CA</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp; containing reference proteins from this
+specific class</tt> <br>
+  <tt>&nbsp; The INPUT file now has Bas1 = 8</tt> <br>
+  <tt>&nbsp; You may RUN CD ANALYSIS PROGRAMS NOW</tt>
+</ul>
+________________________________________________________________________________
+<ul>
+&nbsp;
+</ul>
+</body>
+</html>

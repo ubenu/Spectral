@@ -1,0 +1,196 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Sreerama">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (WinNT; U) [Netscape]">
+  <title>CDPro - Software for Analyzing Protein CD Spectra</title>
+</head>
+<body>
+&nbsp;
+<center>
+<p><a name="Creating INPUT"></a><u><font color="#000099"><font size="+1">How
+to Analyze a given Protein CD data Using CDPro?</font></font></u></p>
+</center>
+<ul>
+  <li> Copy all files into the working directory. This can be done by
+Clicking on the name of the file and saving the file on your computer.
+Once saved these files can be copied to a diskette. The programs are
+written in <font color="#ff0000">FORTRAN</font> and in a PC they work
+in MSDOS environment.</li>
+</ul>
+<ul>
+  <li> <u><font color="#3333ff">Running a given program</font></u>: To
+run a program goto to the directory from the file manager and
+double-click on the executable. This will pop-up a DOS-Window and the
+instructions in the window are self-explanatory. Alternatively, one can
+open a DOS-window, change directory to where the programs reside and
+type the program name.</li>
+  <br>
+&nbsp; <li> <u><font color="#3333ff">Create the input file INPUT</font></u>.
+One can use the template of the sample input file (INPUT.SMP) and edit
+(using a text editor like WORDPAD) the required fields. The CD data in <font
+ face="Symbol">De</font> uints is required and should be entered (one
+can use cut-paste operation) in the data fields in decreasing
+wavelength order (e.g., 260 to 190 nm).</li>
+</ul>
+<ul>
+&nbsp; <br>
+  <a name="INPUT.SMP"></a><u><font color="#3333ff">INPUT.SMP File:</font></u><tt></tt>
+  <p><tt>#</tt> <br>
+  <tt># PRINT&nbsp;&nbsp;&nbsp; IBasis &nbsp;&nbsp; </tt><br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </tt><br>
+  <tt>#</tt> <br>
+  <tt># 1 Title Line</tt> <br>
+  <tt>&nbsp;SAMPLE INPUT:&nbsp; Lactate Dehydrogenase CD DATA (178-260
+nm)</tt> <br>
+  <tt>#</tt> <br>
+  <tt>#&nbsp;&nbsp;&nbsp; WL_Begin&nbsp;&nbsp;&nbsp;&nbsp;
+WL_End&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Factor</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; 260.00000&nbsp;&nbsp;&nbsp;
+178.00000&nbsp;&nbsp;&nbsp; 1</tt> <br>
+  <tt>#</tt> <br>
+  <tt># CD DATA (Long-Wavelength to Short-wavelength; 260-178 nm LIMITS)</tt> <br>
+  <tt>&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp;
+0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp;
+0.00&nbsp; 0.00 -0.03 -0.07</tt> <br>
+  <tt>&nbsp;-0.12 -0.18 -0.25 -0.33 -0.43 -0.54 -0.67 -0.82 -0.99 -1.19
+-1.41 -1.65 -1.92 -2.20 -2.49</tt> <br>
+  <tt>&nbsp;-2.79 -3.11 -3.43 -3.71 -3.93 -4.10 -4.22 -4.29 -4.32 -4.31
+-4.28 -4.22 -4.15 -4.06 -3.97</tt> <br>
+  <tt>&nbsp;-3.87 -3.78 -3.71 -3.67 -3.64 -3.60 -3.53 -3.36 -3.05 -2.60
+-2.04 -1.40 -0.68&nbsp; 0.22&nbsp; 1.38</tt> <br>
+  <tt>&nbsp; 2.68&nbsp; 4.00&nbsp; 5.32&nbsp; 6.63&nbsp; 7.74&nbsp;
+8.46&nbsp; 8.91&nbsp; 9.20&nbsp; 9.27&nbsp; 9.02&nbsp; 8.45&nbsp;
+7.60&nbsp; 6.63&nbsp; 5.69&nbsp; 4.80</tt> <br>
+  <tt>&nbsp; 3.95&nbsp; 3.15&nbsp; 2.40&nbsp; 1.71&nbsp; 1.11&nbsp;
+0.58&nbsp; 0.12 -0.30</tt> <br>
+  <tt>#</tt> <br>
+  <tt>#&nbsp; IGuess&nbsp; Str1&nbsp;&nbsp; Str2&nbsp;&nbsp;
+Str3&nbsp;&nbsp; Str4&nbsp;&nbsp;&nbsp; Str5&nbsp;&nbsp;&nbsp; Str6</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</tt> <br>
+  <tt></tt>&nbsp; </p>
+  <p><u><font color="#3333ff">REQUIRED VALUES:</font></u> </p>
+  <p><font color="#000000">Line 3:</font><font color="#ff0000"> PRINT</font>
+and <font color="#ff0000">IBasis</font> are required. If PRINT = 1, more
+detailed output is generated. </p>
+  <p>Line 6: Title required. </p>
+  <p>Line 9:&nbsp; <font color="#ff0000">Beginning</font> and <font
+ color="#ff0000">Ending Wavelengths</font> and <font color="#ff0000">FACTOR</font>
+are required. Normally, Factor = 1 </p>
+  <p>Line 12: CD data in <font face="Symbol">De</font> -- <font
+ color="#ff0000">WLBegin - WLEnd + 1 values</font> in Free Format.
+(Considered as one input-line here) </p>
+  <p>Line 15: One line required. Values are read only in <font
+ color="#ff0000">SELCON3</font> if <font color="#ff0000">IGuess=0</font>.<br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+<center><u><font color="#3333ff"><font size="+1">Creating INPUT file
+using CRDATA:</font></font></u></center>
+<ul>
+Alternatvely, one can use the CRDATA program (Provided) for converting
+a text file containing CD data (wavelength, CD in each line) to create
+the INPUT file. This program accepts information about CD data file
+interactively in a MSDOS window.&nbsp; Input file for CRDATA (provided
+in CRDATA.INP) looks like:
+  <p><tt>250 254.336716</tt> <br>
+  <tt>249 228.467072</tt> <br>
+  <tt>248 205.944916</tt> <br>
+  <tt>247 191.02887</tt> <br>
+  <tt>246 186.348236</tt> <br>
+  <tt>.</tt> <br>
+  <tt>.</tt> <br>
+  <tt>.</tt> <br>
+  <tt>190 -1469.836426</tt> <br>
+  <tt>189 -1400.282715</tt> <br>
+  <tt>188 -1308.797485</tt> <br>
+  <tt>187 -1224.619507</tt> <br>
+  <tt>186 -1172.598389</tt> </p>
+  <p><font color="#ff0000">When you run CRDATA the screen asks for
+input of some values. A session is included below.</font> </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp;This PROGRAM creates the input for SELCON3</tt> </p>
+  <p><tt>&nbsp;Some of the input values are accepted interactively</tt> <br>
+  <tt>&nbsp;The CD data is read from a file with two values per line</tt> <br>
+  <tt>&nbsp;First value is the wavelength, second CD data</tt> <br>
+  <tt>&nbsp;The wavelength is in the same order as range: say 260-180</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Do you want to create a new INPUT file?</tt> </p>
+  <p><tt>&nbsp;&nbsp;&nbsp;&nbsp; If You Want to CREATE a NEW INPUT
+file, TYPE 0</tt> <br>
+  <tt>&nbsp;&nbsp;&nbsp;&nbsp; If you want to APPEND the existing INPUT
+file&nbsp; TYPE 1</tt> <br>
+&nbsp; </p>
+  <p><font color="#ff0000">Typing 0 results</font> </p>
+  <p>0 <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Any existing INPUT will be overwritten</tt> </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Enter TITLE&nbsp; for your data - 40 characters</tt> <br>
+&nbsp; </p>
+  <p><font color="#ff0000">Enter title</font> </p>
+  <p><tt>A New Data File</tt> <br>
+  <tt>TITLE:&nbsp;&nbsp; A New Data File</tt> </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp; The number of lines to be skipped in CD file</tt> <br>
+  <tt>&nbsp; Enter the number of CD values per nm</tt> <br>
+  <tt>&nbsp; IF the DATA is .. 240nm, 241nm, 242nm etc. enter 1</tt> <br>
+  <tt>&nbsp; IF the DATA is .. 240nm, 240.5nm, 241nm etc. enter 2</tt> <br>
+  <tt>&nbsp; IF the DATA is .. 240nm, 240.2nm, 240.4nm etc. enter 5</tt> <br>
+&nbsp; </p>
+  <p><font color="#ff0000">For data collected at resolutions higher
+than 1 nm the data needs to be converted. In the example file
+CRDATA.INP data are at 1 nm resolution.</font> </p>
+  <p><tt>1</tt> </p>
+  <p><tt>&nbsp;Number of lines per nm in CD datafile&nbsp;&nbsp; 1</tt> </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp; INPUT INITIAL wavelength:</tt> </p>
+  <p><tt>250</tt> </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp; INPUT FINAL wavelength:</tt> </p>
+  <p><tt>186</tt> <br>
+  <tt>&nbsp;Wavelength Range:&nbsp;&nbsp; 250.0&nbsp; 186.0 nm</tt> </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp; Is the CD data in Molar Ellipticity Units?</tt> </p>
+  <p><tt>&nbsp; IF IT IS TYPE 1; IF NOT TYPE 0</tt> </p>
+  <p><tt>&nbsp; If YOU TYPE 1 DATA WILL BE CONVERTED TO DELTA(e)</tt> </p>
+  <p><font color="#ff0000">If the data is in Molar Ellipticity units it
+needs to be converted to <font face="Symbol">De</font> Units.</font> </p>
+  <p><tt>1</tt> </p>
+  <p><tt>________________________________________________________________________________</tt> </p>
+  <p><tt>&nbsp; CD DATA IS IN MOLAR ELLIPTICITY UNITS.</tt> </p>
+  <p><tt>&nbsp;IT WILL BE CONVERTED TO DELTA(e) UNITS.</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>________________________________________________________________________________</tt> <br>
+&nbsp; <br>
+&nbsp; </p>
+  <p><tt>&nbsp;ASCII-file name (CD data)-MAX of 12 letters</tt> </p>
+  <p>Enter FileName (e.g., CRDATA.INP) </p>
+  <p><tt>CRDATA.INP</tt> </p>
+  <p><font color="#ff0000">This results in the creation of Input file
+INPUT.</font> <br>
+&nbsp; <br>
+&nbsp;</p>
+</ul>
+</body>
+</html>

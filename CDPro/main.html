@@ -1,0 +1,126 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Sreerama">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (WinNT; U) [Netscape]">
+  <title>CDPro - Software for Analyzing Protein CD Spectra</title>
+</head>
+<body>
+<center><a name="CDPro"></a></center>
+<center>
+<table border="0" cellspacing="0" cellpadding="0" cols="2"
+ style="width: 96%; background-color: rgb(255, 255, 153);">
+  <tbody>
+    <tr align="center">
+      <td style="text-align: left; width: 20%;"><b><font
+ face="Arial,Helvetica"><font color="#ff0000"><font size="+4">CDPro</font></font></font></b></td>
+      <td style="width: 80%;"><b><font color="#000099"><font size="+2">A
+Software Package for Analyzing Protein CD Spectra</font></font></b></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center>
+<table border="0" cellspacing="3" cellpadding="3" cols="2"
+ style="width: 96%;">
+  <tbody>
+    <tr>
+      <td style="width: 20%;"><b><font face="Arial,Helvetica"><font
+ size="-1"><a href="ReadMe.htm">A Short Guide</a></font></font></b>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="CDPro.htm#Options%20for%20CDPro">Options</a></font></font></b> </p>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="ListPro.htm#List%20of%20Proteins">Proteins</a></font></font></b> </p>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="CDPro.htm#Files%20in%20CDPro">DownLoad</a></font></font></b> </p>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="FAQ.html">FAQs (help)</a></font></font></b> </p>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="CDPro.htm#I/O%20for%20CDPro">Input/Output</a></font></font></b> </p>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="Output.htm#OUTPUT%20Summary%20for%20CDPro">Output File(s)</a></font></font></b> </p>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="ListPro.htm#References">References </a><br>
+&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 0, 153);">(PDF files?)</span></font></font></b> </p>
+      <p><b><font face="Arial,Helvetica"><font size="-1"><a
+ href="ListPro.htm#Acknowledgements">Acknowledgements</a></font></font></b></p>
+      </td>
+      <td style="width: 80%; font-family: times new roman,times,serif;">
+      <p><font size="-1">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; CDPro
+software package consists of three of the popular programs (softwares)
+for analyzing the protein CD spectra for determining the secondary
+structure fractions <span style="font-weight: bold;">(</span><font
+ color="#cc0000" style="font-family: helvetica,arial,sans-serif;"><span
+ style="font-weight: bold;">SELCON3</span>, <span
+ style="font-weight: bold;">CDSSTR</span>,</font><font color="#000000"
+ style="font-family: helvetica,arial,sans-serif;">and </font><font
+ color="#cc0000"
+ style="font-weight: bold; font-family: helvetica,arial,sans-serif;">CONTIN</font><font
+ color="#000000" style="font-family: helvetica,arial,sans-serif;">) <span
+ style="font-family: times new roman,times,serif;">and a program for
+determining tertiary structure class</span> <span
+ style="font-weight: bold;">(</span></font><font color="#cc0000"
+ style="font-weight: bold; font-family: helvetica,arial,sans-serif;">CLUSTER</font><font
+ color="#000000" style="font-family: helvetica,arial,sans-serif;">). <span
+ style="font-family: times new roman,times,serif;">These programs can
+now be run in a browser (<span style="font-weight: bold;">Netscape
+Navigator or Internet Explorer</span>) environment with ease.</span></font>The
+program <font color="#990000"
+ style="font-family: helvetica,arial,sans-serif;">CONTIN</font> has been
+modified to include the variable selection of reference proteins in the
+locally linearized model. The valid solutions from the variable
+selection are selected using the new selection rule (<font
+ color="#cc0000" style="font-family: helvetica,arial,sans-serif;">Helix_Rule</font>)
+proposed by Johnson. This new selection rule is also incorporated in <font
+ color="#990000" style="font-family: helvetica,arial,sans-serif;">SELCON3</font>.<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; One of the major problems in
+using different programs for CD analysis has been the use of different
+reference proteins and different assignments of secondary structures in
+different softwares. The programs provided here have been modified to
+accept any given set of reference proteins (CD spectra and secondary
+structure fractions), and seven such reference sets (constructed from
+the reference sets generally used in CD analysis) are provided. An
+eighth set can be constructed based upon the tertiary structure class.
+Moreover, input data files for these three programs are identical,
+requiring the creation of a single input file (<font color="#3333ff"
+ style="font-weight: bold; font-family: helvetica,arial,sans-serif;"><a
+ href="Input.htm#INPUT.SMP">INPUT</a></font>).<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Estimates of alpha-helix,
+bete-sheet, turns and poly(Pro)II secondary structures can be obtained
+from CD analysis. Number of alpha-helical and beta-strand segments can
+aso be estimated. Calculated CD spectral data (along with <span
+ style="color: rgb(51, 0, 153); font-weight: bold; font-family: helvetica,arial,sans-serif;">RMSD</span>
+and <span
+ style="color: rgb(51, 0, 153); font-weight: bold; font-family: helvetica,arial,sans-serif;">NRMSD</span>with
+experimental data) from the three programs are output for easy
+incorporation into a graphics software. RMSD and NRMSD from the three
+programs decrease in the order: <span
+ style="font-weight: bold; color: rgb(51, 51, 255);"><br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span
+ style="font-family: helvetica,arial,sans-serif;">SELCON3 &gt; CDSSTR
+&gt; CONTINLL</span></span>. (<span
+ style="color: rgb(255, 0, 0); font-weight: bold;">Use caution in
+interpreting <span style="font-family: helvetica,arial,sans-serif;">RMSD</span>and<span
+ style="font-family: helvetica,arial,sans-serif;">NRMSD</span></span>!)<font
+ color="#000000"><font size="-1"
+ style="font-family: helvetica,arial,sans-serif;"><br>
+      <span style="font-family: times new roman,times,serif;">Two new
+reference sets, constructed by including </span><span
+ style="font-weight: bold; font-family: helvetica,arial,sans-serif;">membrane
+proteins</span></font><font size="-2"
+ style="font-family: times new roman,times,serif;">,<font size="-1"> are
+also provided.&nbsp;</font></font><span
+ style="font-family: times new roman,times,serif;"> </span><br>
+      </font></font></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p><!--#exec cgi="/cgi-bin/counter-ord"--><b><font size="-1">visitor.
+Updated: February 5, 2004</font></b> </p>
+</body>
+</html>

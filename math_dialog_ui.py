@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'math_dialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MathDialog(object):
+    def setupUi(self, MathDialog):
+        MathDialog.setObjectName("MathDialog")
+        MathDialog.resize(398, 274)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/spectral.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MathDialog.setWindowIcon(icon)
+        self.layoutWidget = QtWidgets.QWidget(MathDialog)
+        self.layoutWidget.setGeometry(QtCore.QRect(12, 13, 378, 254))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.gridLayout = QtWidgets.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.label = QtWidgets.QLabel(self.layoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.layoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_8.sizePolicy().hasHeightForWidth())
+        self.label_8.setSizePolicy(sizePolicy)
+        self.label_8.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_8.setObjectName("label_8")
+        self.gridLayout.addWidget(self.label_8, 0, 1, 1, 1)
+        self.cmb_op = QtWidgets.QComboBox(self.layoutWidget)
+        self.cmb_op.setObjectName("cmb_op")
+        self.gridLayout.addWidget(self.cmb_op, 1, 0, 1, 1)
+        self.txt_result_name = QtWidgets.QLineEdit(self.layoutWidget)
+        self.txt_result_name.setMinimumSize(QtCore.QSize(0, 0))
+        self.txt_result_name.setClearButtonEnabled(False)
+        self.txt_result_name.setObjectName("txt_result_name")
+        self.gridLayout.addWidget(self.txt_result_name, 1, 1, 1, 1)
+        self.btn_calc = QtWidgets.QPushButton(self.layoutWidget)
+        self.btn_calc.setObjectName("btn_calc")
+        self.gridLayout.addWidget(self.btn_calc, 1, 2, 1, 1)
+        self.verticalLayout.addLayout(self.gridLayout)
+        self.tbl_curves = QtWidgets.QTableWidget(self.layoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.tbl_curves.sizePolicy().hasHeightForWidth())
+        self.tbl_curves.setSizePolicy(sizePolicy)
+        self.tbl_curves.setMinimumSize(QtCore.QSize(0, 200))
+        self.tbl_curves.setMaximumSize(QtCore.QSize(16777215, 200))
+        self.tbl_curves.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.tbl_curves.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectItems)
+        self.tbl_curves.setShowGrid(False)
+        self.tbl_curves.setObjectName("tbl_curves")
+        self.tbl_curves.setColumnCount(0)
+        self.tbl_curves.setRowCount(0)
+        self.verticalLayout.addWidget(self.tbl_curves)
+        self.horizontalLayout.addLayout(self.verticalLayout)
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.btn_ok = QtWidgets.QPushButton(self.layoutWidget)
+        self.btn_ok.setObjectName("btn_ok")
+        self.verticalLayout_2.addWidget(self.btn_ok)
+        self.btn_cancel = QtWidgets.QPushButton(self.layoutWidget)
+        self.btn_cancel.setObjectName("btn_cancel")
+        self.verticalLayout_2.addWidget(self.btn_cancel)
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem)
+        self.horizontalLayout.addLayout(self.verticalLayout_2)
+
+        self.retranslateUi(MathDialog)
+        QtCore.QMetaObject.connectSlotsByName(MathDialog)
+
+    def retranslateUi(self, MathDialog):
+        _translate = QtCore.QCoreApplication.translate
+        MathDialog.setWindowTitle(_translate("MathDialog", "Combine curves"))
+        self.label.setText(_translate("MathDialog", "Operation"))
+        self.label_8.setText(_translate("MathDialog", "Result name"))
+        self.btn_calc.setText(_translate("MathDialog", "Apply"))
+        self.btn_ok.setText(_translate("MathDialog", "OK"))
+        self.btn_cancel.setText(_translate("MathDialog", "Cancel"))
+
+import spectral_rc

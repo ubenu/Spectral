@@ -1,0 +1,328 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="Author" content="Sreerama">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (WinNT; U) [Netscape]">
+  <title>CDPro - Software for Analyzing Protein CD Spectra</title>
+</head>
+<body>
+<font face="Times New Roman,Times"><font color="#000099">CD Analysis
+Using <b>CDPro</b> <i>via</i> the Internet Browser</font></font> <br>
+<font face="Times New Roman,Times"><font color="#cc0000"><font size="-1">Some
+of the frequently asked questions are available in <b><a
+ href="FAQ.html">FAQ.html</a></b></font></font></font> <br>
+<b><font face="Times New Roman,Times"><font color="#cc0000"><font
+ size="-1"><a href="Guide.htm">Old readme file is accessed here</a></font></font></font></b> <br>
+<hr noshade="noshade" width="100%"> <br>
+<b><font color="#000099"><u>1. Create INPUT</u>:</font></b>
+<p>The <font color="#000099">INPUT</font> file looks like: <br>
+&nbsp; </p>
+<center>
+<table border="1" cellpadding="5" cols="1" width="90%" bgcolor="#ffffcc">
+  <tbody>
+    <tr align="center">
+      <td align="left" valign="CENTER"><tt>#</tt> <br>
+      <tt># PRINT&nbsp;&nbsp;&nbsp; IBasis &nbsp;&nbsp; </tt> <br>
+      <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </tt><br>
+      <tt>#</tt> <br>
+      <tt># 1 Title Line</tt> <br>
+      <tt>&nbsp;SAMPLE INPUT:&nbsp; Lactate Dehydrogenase CD DATA
+(178-260 nm)</tt> <br>
+      <tt>#</tt> <br>
+      <tt>#&nbsp;&nbsp;&nbsp; WL_Begin&nbsp;&nbsp;&nbsp;&nbsp;
+WL_End&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Factor</tt> <br>
+      <tt>&nbsp;&nbsp;&nbsp;&nbsp; 260.00000&nbsp;&nbsp;&nbsp;
+178.00000&nbsp;&nbsp;&nbsp; 1</tt> <br>
+      <tt>#</tt> <br>
+      <tt># CD DATA (Long-Wavelength to Short-wavelength; 260-178 nm
+LIMITS)</tt> <br>
+      <tt>&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp;
+0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp; 0.00&nbsp;
+0.00&nbsp; 0.00 -0.03 -0.07</tt> <br>
+      <tt>&nbsp;-0.12 -0.18 -0.25 -0.33 -0.43 -0.54 -0.67 -0.82 -0.99
+-1.19 -1.41 -1.65 -1.92 -2.20 -2.49</tt> <br>
+      <tt>&nbsp;-2.79 -3.11 -3.43 -3.71 -3.93 -4.10 -4.22 -4.29 -4.32
+-4.31 -4.28 -4.22 -4.15 -4.06 -3.97</tt> <br>
+      <tt>&nbsp;-3.87 -3.78 -3.71 -3.67 -3.64 -3.60 -3.53 -3.36 -3.05
+-2.60 -2.04 -1.40 -0.68&nbsp; 0.22&nbsp; 1.38</tt> <br>
+      <tt>&nbsp; 2.68&nbsp; 4.00&nbsp; 5.32&nbsp; 6.63&nbsp; 7.74&nbsp;
+8.46&nbsp; 8.91&nbsp; 9.20&nbsp; 9.27&nbsp; 9.02&nbsp; 8.45&nbsp;
+7.60&nbsp; 6.63&nbsp; 5.69&nbsp; 4.80</tt> <br>
+      <tt>&nbsp; 3.95&nbsp; 3.15&nbsp; 2.40&nbsp; 1.71&nbsp; 1.11&nbsp;
+0.58&nbsp; 0.12 -0.30</tt> <br>
+      <tt>#</tt> <br>
+      <tt>#&nbsp; IGuess&nbsp; Str1&nbsp;&nbsp; Str2&nbsp;&nbsp;
+Str3&nbsp;&nbsp; Str4&nbsp;&nbsp;&nbsp; Str5&nbsp;&nbsp;&nbsp; Str6</tt> <br>
+      <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</tt></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<center>
+<table border="1" cellpadding="5" cols="1" width="90%">
+  <tbody>
+    <tr>
+      <td bgcolor="#ccffff">
+      <ul>
+        <li> <font size="-1">The lines starting with<b><font
+ color="#cc0000"> # </font></b>are required and the data is read free
+of formatting. <b><font color="#cc0000">Please do not have more than
+required values in the INPUT file</font></b>. The CD data should be <u>with
+in 260 - 178 nm</u> (<font color="#000000">examples: (1) 260 - 178 nm;
+(2) 250 - 182 nm; (3) 240 - 180 nm; (4) 240 - 193 nm; (5) 255 - 188 nm;
+etc</font><font color="#3333ff">.</font>)</font></li>
+      </ul>
+      <ul>
+        <li> <font color="#cc0000"><font size="-1">CD Data should be in <u>per
+residue <font face="Symbol">De</font></u><font face="Symbol"> (</font>M<sup>-1</sup>
+cm<sup>-1</sup>) units.</font></font></li>
+      </ul>
+      <ul>
+        <li> <font size="-1">A driver program, CRDATA written in
+FORTRAN, is provided to convert the ASCII data (wavelength, CD data on
+each line)--<b><font color="#3333ff"><a href="crdata.inp">a text file</a></font></b>
+-- to INPUT file is provided. For details of INPUT file check out <a
+ href="Input.htm">INPUT.htm</a> file.</font></li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p><b><font color="#990000"><a href="run_inp.bat">Execute the CRDATA
+program</a></font></b> <br>
+&nbsp; </p>
+<center>
+<table border="1" cellpadding="10" cols="1" width="90%">
+  <tbody>
+    <tr>
+      <td bgcolor="#99ff99"><b><font color="#990000"><font size="-1">The
+INPUT file can be edited (changing the Print Option and Reference set
+Option) using a text editor. <u>Be sure to save as a text file with no
+extensions</u>!<br>
+      <br>
+Multiple sets of DATA can be analyzed in one run. All data sets should
+be contained in the INPUT file, sequentially.<br>
+      <br>
+OUTPUT files will contain results for all data sets contained in the
+INPUT file.<br>
+      </font></font></b></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<p> </p>
+<hr size="3" noshade="noshade" width="100%"> <br>
+<b><font color="#000099">2. Analyze CD data using CDPro suite of
+programs</font></b> <br>
+&nbsp;
+<center>
+<table border="1" cellpadding="5" cols="1" width="90%" bgcolor="#ffffcc">
+  <tbody>
+    <tr>
+      <td align="left">
+      <ul>
+        <li> <font color="#990000"><font size="-1">Before proceeding
+please check the INPUT file. If you need to change certain values, such
+as IBasis, please do so using a text editor and save the file.</font></font></li>
+      </ul>
+      <ul>
+        <li> <font color="#000099"><font size="-1">CDPro has three
+programs for CD analysis (SELCON3, CDSSTR and CONTINLL) and one program
+for determining the tertiary class (CLUSTER).</font></font></li>
+      </ul>
+      <ul>
+        <li> <font color="#000000"><font size="-1">Excuting CLUSTER
+determines the tertiary class of the protein from the CD spectrum and
+creates a reference set, specific to the protein, for analysis. The
+input file will also be modified accordingly (IBasis = 8).</font></font></li>
+      </ul>
+      <ul>
+        <li> <font color="#3333ff"><font size="-1">You may use the
+reference set of proteins determined by CLUSTER and execute the other
+three programs.</font></font></li>
+      </ul>
+      <ul>
+        <li> <font color="#000000"><font size="-1">Alternatively, you
+can change the IBasis value to choose one of the reference sets (largest
+protein set depending on the wavelength range; for example, if the
+wavelength range is 250 - 187 nm, then the 37-protein set or if the
+wavelength range is 250 - 195 nm then the 43 protein set) by editing the
+INPUT file and run the analysis.</font></font></li>
+      </ul>
+      <ul>
+        <li> <font color="#cc0000"><font size="-1">Everytime the
+analysis is performed the output files are written over, so be sure to
+save them with a different name or print them.</font></font></li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<blockquote><b><font color="#000099">Execute Program (Click on the name)</font></b></blockquote>
+<blockquote>&nbsp;
+  <center>
+  <table border="5" cellpadding="5" cols="4" width="90%"
+ bgcolor="#ffcccc">
+    <tbody>
+      <tr align="center">
+        <td align="center"><b><a href="run_clust.bat">CLUSTER</a></b></td>
+        <td><b><a href="run_slcn.bat">SELCON3</a></b></td>
+        <td><b><a href="run_cdss.bat">CDSSTR</a></b></td>
+        <td><b><a href="run_cntn.bat">CONTINLL</a></b></td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+  <p><font size="-1"><font color="#000099">Program CLUSTER determines
+the tertiary class and creates the reference set based on that
+information. It also modifies the INPUT file (IBasis = 8). If interested
+in that analysis, you will need to run the three CD analysis programs
+with the newly created INPUT file</font>.</font></p>
+</blockquote>
+<hr size="3" noshade="noshade" width="100%"> <br>
+<b><font color="#000099">3. Results: Check OUTPUT files (Click on the
+name)</font></b>
+<ul>
+  <li> <font size="-1"><font color="#000000">Results from individual
+programs are in: </font><b><font color="#ff0000"><i>Program_Name</i>.OUT</font><font
+ color="#000000">(e.g, SELCON3.OUT)</font></b></font></li>
+  <li> <font size="-1"><font color="#000000">Final result is appended
+in </font><b><font color="#ff0000">ProtSS.OUT</font></b></font></li>
+  <li> <font size="-1"><font color="#000000">Calculated CD spectra from
+the three programs are given in files: </font><b><font color="#ff0000">CalcCD.OUT</font></b><font
+ color="#000000"> (SELCON3), </font><b><font color="#ff0000">reconCD.OUT</font></b><font
+ color="#000000"> (CDSSTR), and </font><b><font color="#ff0000">CONTIN.CD</font></b><font
+ color="#000000"> (CONTINLL)</font></font></li>
+</ul>
+<blockquote>&nbsp;
+  <center>
+  <table border="5" cellpadding="5" cols="4" width="90%"
+ bgcolor="#66ffff">
+    <tbody>
+      <tr align="center">
+        <td align="center"><b><font color="#000000">SELCON3</font></b></td>
+        <td><b><font color="#000000">CDSSTR</font></b></td>
+        <td><b><font color="#000000">CONTINLL</font></b></td>
+        <td><b><font color="#000000">CLUSTER</font></b></td>
+      </tr>
+      <tr align="center">
+        <td align="center"><font size="-1"><a href="SELCON3.SMP">SELCON3.OUT</a></font> <br>
+        <font size="-1"><a href="PROTSS.SMP">PROTSS.OUT</a></font> <br>
+        <font size="-1"><a href="CALCCD.SMP">CALCCD.OUT</a></font> <br>
+        <font size="-1"><a href="BASIS.SMP">BASIS</a></font></td>
+        <td><font size="-1">&nbsp;<a href="CDSSTR.SMP">CDSSTR.OUT</a></font> <br>
+        <font size="-1"><a href="PROTSS.SMP">PROTSS.OUT</a></font> <br>
+        <font size="-1"><a href="RECONCD.SMP">RECONCD.OUT</a></font></td>
+        <td><font size="-1"><a href="CONTINLL.SMP">CONTINLL.OUT</a></font> <br>
+        <font size="-1"><a href="PROTSS.SMP">PROTSS.OUT</a></font> <br>
+        <font size="-1"><a href="CONTIN.SMP">CONTIN.OUT</a></font> <br>
+        <font size="-1"><a href="BASISPG.SMP">BASIS.PG</a></font> <br>
+        <font size="-1"><a href="SUMMARY.SMP">SUMMARY.PG</a></font> <br>
+        <font size="-1"><a href="CONTINCD.SMP">CONTIN.CD</a></font></td>
+        <td align="center"><font size="-1"><a href="CLUSTER.SMP">CLUSTER.OUT</a></font> <br>
+        <font size="-1"><a href="INPUT.CLS">INPUT</a></font></td>
+      </tr>
+    </tbody>
+  </table>
+  </center>
+  <p><b><u><font color="#3333ff">Files:</font></u></b> <br>
+&nbsp;
+  <table border="1" cellpadding="5" cols="2" width="90%"
+ bgcolor="#ffccff">
+    <tbody>
+      <tr>
+        <td width="15%"><font size="-1">Selcon3.out</font></td>
+        <td><font size="-1">OUTPUT from Selcon3 Program</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">ContinLL.out</font></td>
+        <td><font size="-1">OUTPUT from ContinLL program</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">CDsstr.out</font></td>
+        <td><font size="-1">OUTPUT from CDsstr program</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">ProtSS.out</font></td>
+        <td><font size="-1">Final result from each of the three
+programs, APPENDED!</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">CalcCD.out</font></td>
+        <td><font size="-1"><u>Calculated CD spectra</u> from Selcon3
+program</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">ReconCD.out</font></td>
+        <td><font size="-1"><u>Calculated &amp; Reconstructed CD spectra</u>
+from CDsstr program</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">Basis</font></td>
+        <td><font size="-1">Details of the reference set used in Selcon3</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">Basis.PG</font></td>
+        <td><font size="-1">Details of the reference set used in
+ContinLL</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">Summary.PG</font></td>
+        <td><font size="-1">Detailed output from each of LL
+combinations in ContinLL</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">Contin.out</font></td>
+        <td><font size="-1">Output from CONTIN in the final iteration
+from ContinLL</font></td>
+      </tr>
+      <tr>
+        <td><font size="-1">Contin.CD</font></td>
+        <td><font size="-1"><u>Calculated CD spectra</u> from CONTINLL
+program</font></td>
+      </tr>
+    </tbody>
+  </table>
+  </p>
+</blockquote>
+<hr size="3" noshade="noshade" width="100%">
+<p><b><u><font color="#3333ff">4. How to read the results?</font></u></b> <br>
+&nbsp; <br>
+&nbsp; </p>
+<center>
+<table border="1" cellpadding="5" cols="1" width="90%">
+  <tbody>
+    <tr>
+      <td bgcolor="#ffffcc"><font size="-1">Compare final results from
+each program, summarized in <b><u>ProtSS.out</u></b>. <font
+ color="#990000">ProtSS.out is appended; be sure to check the last
+three lines.&nbsp;</font></font>
+      <blockquote><font color="#000000"><font size="-1">If the results
+from three programs are similar then the analysis is reliable, and&nbsp;
+you can average the secondary structure fractions.&nbsp;</font></font>
+        <p><font color="#cc0000"><font size="-1">If the results from
+the three programs differ considerably, then they are unreliable. There
+may be a problem with the Input data or the Input CD spectrum may not be
+well-represented in the reference proteins.</font></font></p>
+      </blockquote>
+      <font color="#000000"><font size="-1">One can also check the
+output from individual programs and look for problems in the analysis.</font></font>
+      <p><font size="-1"><font color="#000000">Calculated CD spectra
+from the three programs are given in files: </font><font color="#ff0000">CalcCD.OUT</font><font
+ color="#000000"> (SELCON3), </font><font color="#ff0000">reconCD.OUT</font><font
+ color="#000000"> (CDSSTR), and </font><font color="#ff0000">CONTIN.CD</font><font
+ color="#000000"> (CONTINLL)</font></font></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+</body>
+</html>

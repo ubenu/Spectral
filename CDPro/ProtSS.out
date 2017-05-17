@@ -1,0 +1,18 @@
+________________________________________________________________________________
+
+ SAMPLE:       : a.txt                                                       
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SDP48
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .002    .023    .268    .135    .192    .379
+ RMSD(Exp-Calc):    .045
+ NRMSD(Exp-Cal):   1.800
+________________________________________________________________________________
+
+ SAMPLE:       :  Triose Phosphate Isomerase (Test: 245-185 nm)              
+ PROGRAM:      :   CONTINLL
+ Ref. Prot. Set:   SMP50
+ Structure     :    H(r)    H(d)    S(r)    S(d)    Turn    Unrd
+ Fractions     :    .337    .160    .052    .046    .166    .238
+ RMSD(Exp-Calc):    .101
+ NRMSD(Exp-Cal):    .019
