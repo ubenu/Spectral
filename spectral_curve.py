@@ -51,7 +51,8 @@ class SpectralCurve():
         for kw in kwargs:
             self.attributes[kw] = kwargs[kw]
         self._original_attributes = copy.deepcopy(self.attributes)
-        if self.mdeg_units():
+        if self.mdeg_units(): # It's a CD spectrum
+            self.align_cd_to_zero()
             self.convert('dAbs')
             
             
@@ -137,6 +138,14 @@ class SpectralCurve():
             return diff.mean()
         if stats_id == 'std':
             return diff.std()
+        
+    def align_cd_to_zero(self, align_range=10):
+        align_min = self.x_max() - align_range
+        if align_min < self.x_min():
+            align_range = self.x_max() - self.x_min()
+        n_datapoints = int(align_range / self.x_step()[0]) + 1
+        mean_align = self.working_data.iloc[-n_datapoints:].mean()['Y1']
+        self.working_data['Y1'] -= mean_align
         
     def convert(self, target_units):
         # First, convert CD data to a standard unit (mdeg)
