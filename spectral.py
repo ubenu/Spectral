@@ -18,8 +18,6 @@ Created on Tue Oct 25 16:15:06 2016
 # pyrcc5 -o spectral_rc.py spectral.qrc 
 
 
-import sys
-
 import numpy as np
 
 from PyQt5 import QtGui as gui
@@ -533,6 +531,7 @@ class Main(widgets.QMainWindow, ui.Ui_MainWindow):
 
  # Standard main loop code
 if __name__ == '__main__':
+    import sys
     app = widgets.QApplication(sys.argv)
     main = Main()
     main.show()
